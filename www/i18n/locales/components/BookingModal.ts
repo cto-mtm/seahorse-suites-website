@@ -1,0 +1,24 @@
+export default {
+  en: {
+    "title": "Book Your Stay",
+    "subtitle": "Same suites, same rates, same welcome — book wherever you're comfortable.",
+    "airbnbLabel": "Book on Airbnb",
+    "airbnbHint": "All our suites in one place · Superhost",
+    "vrboHeading": "Or book your suite on Vrbo",
+    "vrboHint": "Premier Host · direct listing per suite",
+    "close": "Close",
+    "orContact": "Prefer to talk to us first?",
+    "contactLink": "Send us a message"
+  },
+  es: {
+    "title": "Reserva tu estancia",
+    "subtitle": "Mismas suites, mismas tarifas, misma bienvenida — reserva donde prefieras.",
+    "airbnbLabel": "Reservar en Airbnb",
+    "airbnbHint": "Todas nuestras suites en un solo lugar · Superhost",
+    "vrboHeading": "O reserva tu suite en Vrbo",
+    "vrboHint": "Premier Host · enlace directo por suite",
+    "close": "Cerrar",
+    "orContact": "¿Prefieres hablar con nosotros primero?",
+    "contactLink": "Envíanos un mensaje"
+  }
+}

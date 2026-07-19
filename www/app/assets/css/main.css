@@ -1,0 +1,166 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* ────────────────────────────────────────────────────────────
+   Seahorse Suites — brand tokens
+   Primary: #40d6dc · Display: Cormorant Garamond · Body: Quicksand
+   ──────────────────────────────────────────────────────────── */
+:root {
+  --ss-ocean-50: #effcfd;
+  --ss-ocean-100: #d6f6f9;
+  --ss-ocean-200: #b2edf2;
+  --ss-ocean-300: #7de1ea;
+  --ss-ocean-400: #40d6dc; /* ★ brand primary */
+  --ss-ocean-500: #22b9c2;
+  --ss-ocean-600: #1a95a3;
+  --ss-ocean-700: #1b7885;
+  --ss-ocean-800: #1e616c;
+  --ss-ocean-900: #1d515c;
+  --ss-ocean-950: #0b333a;
+  --ss-sand-100: #f6f0e4;
+  --ss-sand-200: #eadfc8;
+  --ss-sand-300: #dcc9a4;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  letter-spacing: 0.015em;
+  color: var(--ss-ocean-950);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+/* Small-caps eyebrow labels above section titles */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--ss-ocean-600);
+}
+
+/* ────────────────────────────────────────────────────────────
+   Page transitions (Nuxt out-in fade, ~0.5s seamless)
+   ──────────────────────────────────────────────────────────── */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+/* ────────────────────────────────────────────────────────────
+   Scroll-triggered entrance effects
+   Add .reveal (+ optional .reveal-delay-*) to any element; the
+   useScrollReveal() composable flips on .is-visible via
+   IntersectionObserver.
+   ──────────────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-scale {
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.reveal-delay-1 { transition-delay: 0.12s; }
+.reveal-delay-2 { transition-delay: 0.24s; }
+.reveal-delay-3 { transition-delay: 0.36s; }
+
+/* ────────────────────────────────────────────────────────────
+   Floating elements (seahorse watermark, coastal icons)
+   ──────────────────────────────────────────────────────────── */
+@keyframes ss-float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-14px) rotate(2deg); }
+}
+.floaty {
+  animation: ss-float 6s ease-in-out infinite;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Animated CSS ocean (hero background) — layered gradient waves.
+   Swap for a background <video> later; markup slot is in index.vue.
+   ──────────────────────────────────────────────────────────── */
+.ocean-bg {
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(64, 214, 220, 0.25) 0%, transparent 60%),
+    linear-gradient(180deg, var(--ss-ocean-950) 0%, var(--ss-ocean-800) 45%, var(--ss-ocean-600) 80%, var(--ss-ocean-500) 100%);
+}
+/* Seamless horizontal wave drift — pair with an SVG that is 200% wide
+   and whose path repeats every half-width. */
+@keyframes ss-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.wave-drift {
+  animation: ss-drift 22s linear infinite;
+  will-change: transform;
+}
+.wave-drift-mid {
+  animation: ss-drift 30s linear infinite reverse;
+  will-change: transform;
+}
+.wave-drift-slow {
+  animation: ss-drift 45s linear infinite;
+  will-change: transform;
+}
+@keyframes ss-shimmer {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.55; }
+}
+.ocean-shimmer {
+  animation: ss-shimmer 7s ease-in-out infinite;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Initial page loader (0.5s fade-out)
+   ──────────────────────────────────────────────────────────── */
+.loader-fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.loader-fade-leave-to {
+  opacity: 0;
+}
+
+/* ────────────────────────────────────────────────────────────
+   Depth utilities
+   ──────────────────────────────────────────────────────────── */
+.shadow-coastal {
+  box-shadow: 0 20px 50px -20px rgba(11, 51, 58, 0.35);
+}
+.bg-fade-sand {
+  background: linear-gradient(180deg, #ffffff 0%, var(--ss-sand-100) 100%);
+}
+.bg-fade-sand-up {
+  background: linear-gradient(0deg, #ffffff 0%, var(--ss-sand-100) 100%);
+}

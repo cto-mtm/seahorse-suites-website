@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+firebase-debug*.log*
+
+# Firebase
+.firebase/
+firebase/.firebase/
+firebase/www/
+
+# Dependencies
+node_modules/
+
+# Env
+.env
+.env.*
+
+# OS
+.DS_Store
+
+# Tooling
+.claude/
+
+# Email previews
+preview/
+
+# Build output
+dist/
+.nuxt/
+.output/
+lib/

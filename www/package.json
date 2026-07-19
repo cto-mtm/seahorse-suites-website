@@ -1,0 +1,36 @@
+{
+  "name": "seahorse-suites-www",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host 0.0.0.0 --port 3000",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "deploy:hosting": "node scripts/deploy-hosting.mjs"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.8.2",
+    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/image": "^2.0.0",
+    "@nuxt/ui": "^4.2.1",
+    "@nuxtjs/i18n": "^9.0.0",
+    "@nuxtjs/seo": "^3.4.0",
+    "better-sqlite3": "^12.4.5",
+    "eslint": "^9.39.1",
+    "nuxt": "^4.2.1",
+    "nuxt-gtag": "^4.1.0",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.3",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@nuxt/fonts": "^0.12.1",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "sharp": "^0.33.4"
+  }
+}
