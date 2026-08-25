@@ -2,6 +2,7 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 const { submitForm } = useSubmitForm()
+const recaptcha = useRecaptcha()
 
 const quickLinks = computed(() => [
   { label: t('AppHeader.suites'), to: localePath('suites') },
@@ -16,7 +17,8 @@ const state = ref<'idle' | 'sending' | 'success' | 'error'>('idle')
 async function subscribe() {
   if (!email.value || state.value === 'sending') return
   state.value = 'sending'
-  const result = await submitForm('newsletter', { email: email.value })
+  const token = await recaptcha.execute('newsletter')
+  const result = await submitForm('newsletter', { email: email.value }, token)
   state.value = result.success ? 'success' : 'error'
   if (result.success) email.value = ''
 }

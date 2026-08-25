@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const { submitForm } = useSubmitForm()
+const recaptcha = useRecaptcha()
 
 useSeoMeta({
   title: () => t('Contact.metaTitle'),
@@ -24,7 +25,8 @@ async function onSubmit() {
   state.value = 'sending'
   serverError.value = ''
 
-  const result = await submitForm('contact', { ...form })
+  const token = await recaptcha.execute('contact')
+  const result = await submitForm('contact', { ...form }, token)
 
   if (result.success) {
     state.value = 'success'

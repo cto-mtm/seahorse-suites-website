@@ -7,6 +7,7 @@ import Suites from './locales/pages/Suites'
 import Amenities from './locales/pages/Amenities'
 import Explore from './locales/pages/Explore'
 import Contact from './locales/pages/Contact'
+import Reserve from './locales/pages/Reserve'
 
 export default defineI18nConfig(() => ({
   legacy: false,
@@ -22,7 +23,8 @@ export default defineI18nConfig(() => ({
       Suites: Suites.en,
       Amenities: Amenities.en,
       Explore: Explore.en,
-      Contact: Contact.en
+      Contact: Contact.en,
+      Reserve: Reserve.en
     },
     es: {
       AppHeader: AppHeader.es,
@@ -33,7 +35,8 @@ export default defineI18nConfig(() => ({
       Suites: Suites.es,
       Amenities: Amenities.es,
       Explore: Explore.es,
-      Contact: Contact.es
+      Contact: Contact.es,
+      Reserve: Reserve.es
     }
   }
 }))

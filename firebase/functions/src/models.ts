@@ -33,8 +33,25 @@ const formConfigs: Record<string, FormConfig> = {
     subject: "New Newsletter Signup",
     confirmationSubject: "Welcome to the Seahorse Suites newsletter",
   },
-  // Add more form types here (e.g., "request-booking")
-  // following the same shape.
+  "request-booking": {
+    schema: z.object({
+      name: z.string().min(1),
+      email: z.string().email(),
+      phone: z.string().optional(),
+      suite: z.string().min(1),
+      checkIn: z.string().min(1),
+      checkOut: z.string().min(1),
+      nights: z.string().optional(),
+      guests: z.string().min(1),
+      message: z.string().optional(),
+    }),
+    requiredFields: ["name", "email", "suite", "checkIn", "checkOut", "guests"],
+    optionalFields: ["phone", "nights", "message"],
+    notifyEmail: "seahorsesuites@gmail.com",
+    subject: "New Direct Reservation Request",
+    confirmationSubject: "We received your reservation request — Seahorse Suites",
+  },
+  // Add more form types here following the same shape.
 };
 
 export default formConfigs;

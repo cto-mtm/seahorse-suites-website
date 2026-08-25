@@ -146,6 +146,26 @@ useSeoMeta({
                 <p class="mt-1 text-xs text-[var(--ss-ocean-200)]">{{ t('Suites.bookSubtitle') }}</p>
               </div>
               <div class="space-y-3 p-6">
+                <!-- Direct reservation — the primary, pushed path -->
+                <NuxtLink
+                  :to="localePath({ name: 'reserve', query: { suite: suite.slug } })"
+                  class="group flex items-center gap-3.5 rounded-xl border-2 border-[var(--ss-ocean-300)] bg-[var(--ss-ocean-50)] px-4 py-3.5 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
+                >
+                  <span class="flex size-10 shrink-0 items-center justify-center rounded-full bg-[var(--ss-ocean-400)] text-[var(--ss-ocean-950)] transition-transform duration-300 group-hover:scale-110">
+                    <UIcon name="i-lucide-calendar-heart" class="size-5" />
+                  </span>
+                  <span class="flex-1">
+                    <span class="block text-sm font-bold tracking-brand text-[var(--ss-ocean-950)]">{{ t('Suites.bookDirect') }}</span>
+                    <span class="mt-0.5 block text-xs tracking-brand text-[var(--ss-ocean-600)]">{{ t('Suites.bookDirectHint') }}</span>
+                  </span>
+                  <UIcon
+                    name="i-lucide-arrow-right"
+                    class="size-4 text-[var(--ss-ocean-400)] transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-[var(--ss-ocean-500)]"
+                  />
+                </NuxtLink>
+
+                <p class="pt-1 text-xs font-bold tracking-brand uppercase text-[var(--ss-ocean-700)]">{{ t('Suites.orPlatforms') }}</p>
+
                 <a
                   v-for="platform in bookingLinks"
                   :key="platform.name"

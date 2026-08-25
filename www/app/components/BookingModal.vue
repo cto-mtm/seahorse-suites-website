@@ -68,12 +68,33 @@ watch(isOpen, (open) => {
           </div>
 
           <div class="overflow-y-auto p-7">
+            <!-- Direct reservation — the primary, pushed path -->
+            <NuxtLink
+              :to="localePath('reserve')"
+              class="group flex items-center gap-4 rounded-2xl border-2 border-[var(--ss-ocean-300)] bg-[var(--ss-ocean-50)] p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
+              @click="close"
+            >
+              <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[var(--ss-ocean-400)] text-[var(--ss-ocean-950)] transition-transform duration-300 group-hover:scale-110">
+                <UIcon name="i-lucide-calendar-heart" class="size-6" />
+              </span>
+              <span class="flex-1">
+                <span class="block font-bold tracking-brand text-[var(--ss-ocean-950)]">{{ t('BookingModal.directLabel') }}</span>
+                <span class="mt-0.5 block text-xs tracking-brand text-[var(--ss-ocean-600)]">{{ t('BookingModal.directHint') }}</span>
+              </span>
+              <UIcon
+                name="i-lucide-arrow-right"
+                class="size-5 text-[var(--ss-ocean-400)] transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-[var(--ss-ocean-500)]"
+              />
+            </NuxtLink>
+
+            <p class="mt-6 text-sm font-bold tracking-brand uppercase text-[var(--ss-ocean-800)]">{{ t('BookingModal.orPlatforms') }}</p>
+
             <!-- Airbnb — all suites via the host profile -->
             <a
               :href="appConfig.booking.airbnbUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="group flex items-center gap-4 rounded-2xl border border-[var(--ss-ocean-100)] p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-300)] hover:shadow-coastal"
+              class="group mt-3 flex items-center gap-4 rounded-2xl border border-[var(--ss-ocean-100)] p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-300)] hover:shadow-coastal"
               @click="close"
             >
               <span

@@ -1,4 +1,15 @@
 export default defineAppConfig({
+  // Single source of truth for public contact details. Reused by the
+  // footer, the reservation form's mailto:/WhatsApp templates, etc.
+  contact: {
+    email: 'seahorsesuites@gmail.com',
+    // Display string (human-readable)
+    phone: '+1 573 529 1529',
+    // Digits only, E.164 without the '+', for tel: and wa.me links
+    phoneE164: '15735291529',
+    // WhatsApp number (same line). wa.me expects digits only, no '+'.
+    whatsapp: '15735291529'
+  },
   booking: {
     // Airbnb host profile — lists all properties in one place (used by the Book Now modal)
     airbnbUrl: 'https://www.airbnb.com/users/profile/1529338761913645803',

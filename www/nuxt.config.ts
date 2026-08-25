@@ -33,7 +33,12 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      submitFormUrl: 'REPLACE_ME'
+      // Deployed `submitForm` Cloud Function (2nd-gen HTTPS, us-central1).
+      submitFormUrl: 'https://us-central1-seahorse-suites-website.cloudfunctions.net/submitForm',
+      // reCAPTCHA v3 SITE key (public). REPLACE_ME with the real key to enable
+      // bot protection in production. Until then, forms send no token — which
+      // is fine locally (the Cloud Function bypasses reCAPTCHA in the emulator).
+      recaptchaSiteKey: 'REPLACE_ME'
     }
   },
 
