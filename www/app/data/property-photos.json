@@ -1,0 +1,867 @@
+{
+  "suites": {
+    "seahorse-retreat": {
+      "hero": {
+        "src": "/images/suites/seahorse-retreat/178.webp",
+        "thumb": "/images/suites/seahorse-retreat/178-thumb.webp"
+      },
+      "photos": [
+        {
+          "src": "/images/suites/seahorse-retreat/177.webp",
+          "thumb": "/images/suites/seahorse-retreat/177-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/178.webp",
+          "thumb": "/images/suites/seahorse-retreat/178-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/179.webp",
+          "thumb": "/images/suites/seahorse-retreat/179-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/180.webp",
+          "thumb": "/images/suites/seahorse-retreat/180-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/181.webp",
+          "thumb": "/images/suites/seahorse-retreat/181-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/182.webp",
+          "thumb": "/images/suites/seahorse-retreat/182-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/183.webp",
+          "thumb": "/images/suites/seahorse-retreat/183-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/184.webp",
+          "thumb": "/images/suites/seahorse-retreat/184-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/185.webp",
+          "thumb": "/images/suites/seahorse-retreat/185-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/186.webp",
+          "thumb": "/images/suites/seahorse-retreat/186-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/187.webp",
+          "thumb": "/images/suites/seahorse-retreat/187-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/188.webp",
+          "thumb": "/images/suites/seahorse-retreat/188-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/189.webp",
+          "thumb": "/images/suites/seahorse-retreat/189-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/190.webp",
+          "thumb": "/images/suites/seahorse-retreat/190-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/191.webp",
+          "thumb": "/images/suites/seahorse-retreat/191-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/192.webp",
+          "thumb": "/images/suites/seahorse-retreat/192-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/193.webp",
+          "thumb": "/images/suites/seahorse-retreat/193-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/194.webp",
+          "thumb": "/images/suites/seahorse-retreat/194-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/195.webp",
+          "thumb": "/images/suites/seahorse-retreat/195-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/196.webp",
+          "thumb": "/images/suites/seahorse-retreat/196-thumb.webp"
+        },
+        {
+          "src": "/images/suites/seahorse-retreat/197.webp",
+          "thumb": "/images/suites/seahorse-retreat/197-thumb.webp"
+        }
+      ],
+      "floorPlan": {
+        "src": "/images/suites/seahorse-retreat/floor-plan.webp",
+        "width": 1600,
+        "height": 1200
+      }
+    },
+    "sunset-haven": {
+      "hero": {
+        "src": "/images/suites/sunset-haven/162.webp",
+        "thumb": "/images/suites/sunset-haven/162-thumb.webp"
+      },
+      "photos": [
+        {
+          "src": "/images/suites/sunset-haven/154.webp",
+          "thumb": "/images/suites/sunset-haven/154-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/155.webp",
+          "thumb": "/images/suites/sunset-haven/155-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/156.webp",
+          "thumb": "/images/suites/sunset-haven/156-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/157.webp",
+          "thumb": "/images/suites/sunset-haven/157-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/158.webp",
+          "thumb": "/images/suites/sunset-haven/158-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/159.webp",
+          "thumb": "/images/suites/sunset-haven/159-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/160.webp",
+          "thumb": "/images/suites/sunset-haven/160-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/161.webp",
+          "thumb": "/images/suites/sunset-haven/161-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/162.webp",
+          "thumb": "/images/suites/sunset-haven/162-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/163.webp",
+          "thumb": "/images/suites/sunset-haven/163-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/164.webp",
+          "thumb": "/images/suites/sunset-haven/164-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/165.webp",
+          "thumb": "/images/suites/sunset-haven/165-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/166.webp",
+          "thumb": "/images/suites/sunset-haven/166-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/167.webp",
+          "thumb": "/images/suites/sunset-haven/167-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/168.webp",
+          "thumb": "/images/suites/sunset-haven/168-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/169.webp",
+          "thumb": "/images/suites/sunset-haven/169-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/170.webp",
+          "thumb": "/images/suites/sunset-haven/170-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/171.webp",
+          "thumb": "/images/suites/sunset-haven/171-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/172.webp",
+          "thumb": "/images/suites/sunset-haven/172-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/173.webp",
+          "thumb": "/images/suites/sunset-haven/173-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/174.webp",
+          "thumb": "/images/suites/sunset-haven/174-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/175.webp",
+          "thumb": "/images/suites/sunset-haven/175-thumb.webp"
+        },
+        {
+          "src": "/images/suites/sunset-haven/176.webp",
+          "thumb": "/images/suites/sunset-haven/176-thumb.webp"
+        }
+      ],
+      "floorPlan": {
+        "src": "/images/suites/sunset-haven/floor-plan.webp",
+        "width": 1600,
+        "height": 1200
+      }
+    },
+    "coastal-bliss": {
+      "hero": {
+        "src": "/images/suites/coastal-bliss/136.webp",
+        "thumb": "/images/suites/coastal-bliss/136-thumb.webp"
+      },
+      "photos": [
+        {
+          "src": "/images/suites/coastal-bliss/127.webp",
+          "thumb": "/images/suites/coastal-bliss/127-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/128.webp",
+          "thumb": "/images/suites/coastal-bliss/128-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/129.webp",
+          "thumb": "/images/suites/coastal-bliss/129-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/130.webp",
+          "thumb": "/images/suites/coastal-bliss/130-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/131.webp",
+          "thumb": "/images/suites/coastal-bliss/131-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/132.webp",
+          "thumb": "/images/suites/coastal-bliss/132-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/133.webp",
+          "thumb": "/images/suites/coastal-bliss/133-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/134.webp",
+          "thumb": "/images/suites/coastal-bliss/134-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/135.webp",
+          "thumb": "/images/suites/coastal-bliss/135-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/136.webp",
+          "thumb": "/images/suites/coastal-bliss/136-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/137.webp",
+          "thumb": "/images/suites/coastal-bliss/137-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/138.webp",
+          "thumb": "/images/suites/coastal-bliss/138-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/139.webp",
+          "thumb": "/images/suites/coastal-bliss/139-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/140.webp",
+          "thumb": "/images/suites/coastal-bliss/140-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/141.webp",
+          "thumb": "/images/suites/coastal-bliss/141-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/142.webp",
+          "thumb": "/images/suites/coastal-bliss/142-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/143.webp",
+          "thumb": "/images/suites/coastal-bliss/143-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/144.webp",
+          "thumb": "/images/suites/coastal-bliss/144-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/145.webp",
+          "thumb": "/images/suites/coastal-bliss/145-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/146.webp",
+          "thumb": "/images/suites/coastal-bliss/146-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/147.webp",
+          "thumb": "/images/suites/coastal-bliss/147-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/148.webp",
+          "thumb": "/images/suites/coastal-bliss/148-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/149.webp",
+          "thumb": "/images/suites/coastal-bliss/149-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/150.webp",
+          "thumb": "/images/suites/coastal-bliss/150-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/151.webp",
+          "thumb": "/images/suites/coastal-bliss/151-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/152.webp",
+          "thumb": "/images/suites/coastal-bliss/152-thumb.webp"
+        },
+        {
+          "src": "/images/suites/coastal-bliss/153.webp",
+          "thumb": "/images/suites/coastal-bliss/153-thumb.webp"
+        }
+      ],
+      "floorPlan": {
+        "src": "/images/suites/coastal-bliss/floor-plan.webp",
+        "width": 1600,
+        "height": 1200
+      }
+    },
+    "ocean-breeze": {
+      "hero": {
+        "src": "/images/suites/ocean-breeze/113.webp",
+        "thumb": "/images/suites/ocean-breeze/113-thumb.webp"
+      },
+      "photos": [
+        {
+          "src": "/images/suites/ocean-breeze/096.webp",
+          "thumb": "/images/suites/ocean-breeze/096-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/097.webp",
+          "thumb": "/images/suites/ocean-breeze/097-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/098.webp",
+          "thumb": "/images/suites/ocean-breeze/098-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/099.webp",
+          "thumb": "/images/suites/ocean-breeze/099-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/100.webp",
+          "thumb": "/images/suites/ocean-breeze/100-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/101.webp",
+          "thumb": "/images/suites/ocean-breeze/101-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/102.webp",
+          "thumb": "/images/suites/ocean-breeze/102-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/103.webp",
+          "thumb": "/images/suites/ocean-breeze/103-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/104.webp",
+          "thumb": "/images/suites/ocean-breeze/104-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/105.webp",
+          "thumb": "/images/suites/ocean-breeze/105-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/106.webp",
+          "thumb": "/images/suites/ocean-breeze/106-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/107.webp",
+          "thumb": "/images/suites/ocean-breeze/107-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/108.webp",
+          "thumb": "/images/suites/ocean-breeze/108-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/109.webp",
+          "thumb": "/images/suites/ocean-breeze/109-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/110.webp",
+          "thumb": "/images/suites/ocean-breeze/110-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/111.webp",
+          "thumb": "/images/suites/ocean-breeze/111-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/112.webp",
+          "thumb": "/images/suites/ocean-breeze/112-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/113.webp",
+          "thumb": "/images/suites/ocean-breeze/113-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/114.webp",
+          "thumb": "/images/suites/ocean-breeze/114-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/115.webp",
+          "thumb": "/images/suites/ocean-breeze/115-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/116.webp",
+          "thumb": "/images/suites/ocean-breeze/116-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/117.webp",
+          "thumb": "/images/suites/ocean-breeze/117-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/118.webp",
+          "thumb": "/images/suites/ocean-breeze/118-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/119.webp",
+          "thumb": "/images/suites/ocean-breeze/119-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/120.webp",
+          "thumb": "/images/suites/ocean-breeze/120-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/121.webp",
+          "thumb": "/images/suites/ocean-breeze/121-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/122.webp",
+          "thumb": "/images/suites/ocean-breeze/122-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/123.webp",
+          "thumb": "/images/suites/ocean-breeze/123-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/124.webp",
+          "thumb": "/images/suites/ocean-breeze/124-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/125.webp",
+          "thumb": "/images/suites/ocean-breeze/125-thumb.webp"
+        },
+        {
+          "src": "/images/suites/ocean-breeze/126.webp",
+          "thumb": "/images/suites/ocean-breeze/126-thumb.webp"
+        }
+      ],
+      "floorPlan": {
+        "src": "/images/suites/ocean-breeze/floor-plan.webp",
+        "width": 1600,
+        "height": 1200
+      }
+    },
+    "beachside-escape": {
+      "hero": {
+        "src": "/images/suites/beachside-escape/069.webp",
+        "thumb": "/images/suites/beachside-escape/069-thumb.webp"
+      },
+      "photos": [
+        {
+          "src": "/images/suites/beachside-escape/054.webp",
+          "thumb": "/images/suites/beachside-escape/054-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/055.webp",
+          "thumb": "/images/suites/beachside-escape/055-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/056.webp",
+          "thumb": "/images/suites/beachside-escape/056-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/057.webp",
+          "thumb": "/images/suites/beachside-escape/057-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/058.webp",
+          "thumb": "/images/suites/beachside-escape/058-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/059.webp",
+          "thumb": "/images/suites/beachside-escape/059-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/060.webp",
+          "thumb": "/images/suites/beachside-escape/060-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/061.webp",
+          "thumb": "/images/suites/beachside-escape/061-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/062.webp",
+          "thumb": "/images/suites/beachside-escape/062-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/063.webp",
+          "thumb": "/images/suites/beachside-escape/063-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/064.webp",
+          "thumb": "/images/suites/beachside-escape/064-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/065.webp",
+          "thumb": "/images/suites/beachside-escape/065-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/066.webp",
+          "thumb": "/images/suites/beachside-escape/066-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/067.webp",
+          "thumb": "/images/suites/beachside-escape/067-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/068.webp",
+          "thumb": "/images/suites/beachside-escape/068-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/069.webp",
+          "thumb": "/images/suites/beachside-escape/069-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/070.webp",
+          "thumb": "/images/suites/beachside-escape/070-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/071.webp",
+          "thumb": "/images/suites/beachside-escape/071-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/072.webp",
+          "thumb": "/images/suites/beachside-escape/072-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/073.webp",
+          "thumb": "/images/suites/beachside-escape/073-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/074.webp",
+          "thumb": "/images/suites/beachside-escape/074-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/075.webp",
+          "thumb": "/images/suites/beachside-escape/075-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/076.webp",
+          "thumb": "/images/suites/beachside-escape/076-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/077.webp",
+          "thumb": "/images/suites/beachside-escape/077-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/078.webp",
+          "thumb": "/images/suites/beachside-escape/078-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/079.webp",
+          "thumb": "/images/suites/beachside-escape/079-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/080.webp",
+          "thumb": "/images/suites/beachside-escape/080-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/081.webp",
+          "thumb": "/images/suites/beachside-escape/081-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/082.webp",
+          "thumb": "/images/suites/beachside-escape/082-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/083.webp",
+          "thumb": "/images/suites/beachside-escape/083-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/084.webp",
+          "thumb": "/images/suites/beachside-escape/084-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/085.webp",
+          "thumb": "/images/suites/beachside-escape/085-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/086.webp",
+          "thumb": "/images/suites/beachside-escape/086-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/087.webp",
+          "thumb": "/images/suites/beachside-escape/087-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/088.webp",
+          "thumb": "/images/suites/beachside-escape/088-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/089.webp",
+          "thumb": "/images/suites/beachside-escape/089-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/090.webp",
+          "thumb": "/images/suites/beachside-escape/090-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/091.webp",
+          "thumb": "/images/suites/beachside-escape/091-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/092.webp",
+          "thumb": "/images/suites/beachside-escape/092-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/093.webp",
+          "thumb": "/images/suites/beachside-escape/093-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/094.webp",
+          "thumb": "/images/suites/beachside-escape/094-thumb.webp"
+        },
+        {
+          "src": "/images/suites/beachside-escape/095.webp",
+          "thumb": "/images/suites/beachside-escape/095-thumb.webp"
+        }
+      ],
+      "floorPlan": {
+        "src": "/images/suites/beachside-escape/floor-plan.webp",
+        "width": 1600,
+        "height": 1200
+      }
+    }
+  },
+  "property": {
+    "aerial": [
+      {
+        "src": "/images/property/aerial/01.webp",
+        "thumb": "/images/property/aerial/01-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/02.webp",
+        "thumb": "/images/property/aerial/02-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/03.webp",
+        "thumb": "/images/property/aerial/03-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/04.webp",
+        "thumb": "/images/property/aerial/04-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/05.webp",
+        "thumb": "/images/property/aerial/05-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/06.webp",
+        "thumb": "/images/property/aerial/06-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/07.webp",
+        "thumb": "/images/property/aerial/07-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/08.webp",
+        "thumb": "/images/property/aerial/08-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/09.webp",
+        "thumb": "/images/property/aerial/09-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/10.webp",
+        "thumb": "/images/property/aerial/10-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/11.webp",
+        "thumb": "/images/property/aerial/11-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/12.webp",
+        "thumb": "/images/property/aerial/12-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/13.webp",
+        "thumb": "/images/property/aerial/13-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/14.webp",
+        "thumb": "/images/property/aerial/14-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/15.webp",
+        "thumb": "/images/property/aerial/15-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/16.webp",
+        "thumb": "/images/property/aerial/16-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/17.webp",
+        "thumb": "/images/property/aerial/17-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/18.webp",
+        "thumb": "/images/property/aerial/18-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/19.webp",
+        "thumb": "/images/property/aerial/19-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/20.webp",
+        "thumb": "/images/property/aerial/20-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/21.webp",
+        "thumb": "/images/property/aerial/21-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/22.webp",
+        "thumb": "/images/property/aerial/22-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/23.webp",
+        "thumb": "/images/property/aerial/23-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/24.webp",
+        "thumb": "/images/property/aerial/24-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/25.webp",
+        "thumb": "/images/property/aerial/25-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/26.webp",
+        "thumb": "/images/property/aerial/26-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/27.webp",
+        "thumb": "/images/property/aerial/27-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/28.webp",
+        "thumb": "/images/property/aerial/28-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/29.webp",
+        "thumb": "/images/property/aerial/29-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/30.webp",
+        "thumb": "/images/property/aerial/30-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/31.webp",
+        "thumb": "/images/property/aerial/31-thumb.webp"
+      },
+      {
+        "src": "/images/property/aerial/32.webp",
+        "thumb": "/images/property/aerial/32-thumb.webp"
+      }
+    ],
+    "exterior": [
+      {
+        "src": "/images/property/exterior/33.webp",
+        "thumb": "/images/property/exterior/33-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/34.webp",
+        "thumb": "/images/property/exterior/34-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/35.webp",
+        "thumb": "/images/property/exterior/35-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/36.webp",
+        "thumb": "/images/property/exterior/36-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/37.webp",
+        "thumb": "/images/property/exterior/37-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/38.webp",
+        "thumb": "/images/property/exterior/38-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/39.webp",
+        "thumb": "/images/property/exterior/39-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/40.webp",
+        "thumb": "/images/property/exterior/40-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/41.webp",
+        "thumb": "/images/property/exterior/41-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/42.webp",
+        "thumb": "/images/property/exterior/42-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/43.webp",
+        "thumb": "/images/property/exterior/43-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/44.webp",
+        "thumb": "/images/property/exterior/44-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/45.webp",
+        "thumb": "/images/property/exterior/45-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/46.webp",
+        "thumb": "/images/property/exterior/46-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/47.webp",
+        "thumb": "/images/property/exterior/47-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/48.webp",
+        "thumb": "/images/property/exterior/48-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/49.webp",
+        "thumb": "/images/property/exterior/49-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/50.webp",
+        "thumb": "/images/property/exterior/50-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/51.webp",
+        "thumb": "/images/property/exterior/51-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/52.webp",
+        "thumb": "/images/property/exterior/52-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/53.webp",
+        "thumb": "/images/property/exterior/53-thumb.webp"
+      }
+    ],
+    "parallax": {
+      "src": "/images/property/aerial/13.webp",
+      "thumb": "/images/property/aerial/13-thumb.webp"
+    }
+  }
+}

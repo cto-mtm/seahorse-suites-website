@@ -10,6 +10,7 @@ useSeoMeta({
 useScrollReveal()
 
 const suites = useSuites()
+const photos = usePropertyPhotos()
 </script>
 
 <template>
@@ -33,23 +34,18 @@ const suites = useSuites()
           :id="suite.slug"
           class="group grid scroll-mt-28 items-center gap-8 md:grid-cols-2 md:gap-14"
         >
-          <!--
-            IMAGE SLOT — replace the gradient placeholder with real photos:
-            <NuxtImg :src="`/images/suites/${suite.slug}/main.webp`" :alt="suite.title"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          -->
           <NuxtLink
             :to="localePath({ name: 'suites-slug', params: { slug: suite.slug } })"
             class="reveal-scale relative block h-80 overflow-hidden rounded-3xl shadow-coastal md:h-[26rem]"
             :class="i % 2 === 1 ? 'md:order-2' : ''"
             :aria-label="suite.title"
           >
-            <div
-              class="flex h-full w-full items-center justify-center bg-gradient-to-br transition-transform duration-700 group-hover:scale-105"
-              :class="suite.gradient"
-            >
-              <UIcon :name="suite.icon" class="size-20 text-white/70" />
-            </div>
+            <NuxtImg
+              :src="photos.suites[suite.slug]?.hero.src"
+              :alt="suite.title"
+              :loading="i === 0 ? undefined : 'lazy'"
+              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
           </NuxtLink>
 
           <div class="reveal" :class="i % 2 === 1 ? 'md:order-1' : ''">

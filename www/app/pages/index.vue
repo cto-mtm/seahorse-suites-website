@@ -35,6 +35,7 @@ onMounted(() => {
 onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 
 const suites = useSuites()
+const photos = usePropertyPhotos()
 const amenities = useAmenities()
 const { open: openBooking } = useBookingModal()
 
@@ -178,17 +179,13 @@ const attractions = useAttractions()
             class="group reveal overflow-hidden rounded-2xl bg-white shadow-coastal transition-all duration-500 hover:-translate-y-2"
             :class="`reveal-delay-${i + 1}`"
           >
-            <!--
-              IMAGE SLOT — replace the gradient placeholder with a real photo:
-              <NuxtImg :src="`/images/suites/${suite.slug}/main.webp`" :alt="suite.title" class="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            -->
             <div class="relative h-64 overflow-hidden">
-              <div
-                class="reveal-scale flex h-full w-full items-center justify-center bg-gradient-to-br transition-transform duration-700 group-hover:scale-105"
-                :class="suite.gradient"
-              >
-                <UIcon :name="suite.icon" class="size-16 text-white/70" />
-              </div>
+              <NuxtImg
+                :src="photos.suites[suite.slug]?.hero.thumb"
+                :alt="suite.title"
+                loading="lazy"
+                class="reveal-scale h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
 
             <div class="p-7 transition-transform duration-500 group-hover:-translate-y-1">
@@ -250,10 +247,12 @@ const attractions = useAttractions()
         :style="{ transform: `translateY(${parallaxY}px)` }"
         aria-hidden="true"
       >
-        <!--
-          Swap for a real photo when available:
-          <NuxtImg src="/images/attractions/coastline.webp" alt="" class="h-full w-full object-cover opacity-50" />
-        -->
+        <NuxtImg
+          :src="photos.property.parallax.thumb"
+          alt=""
+          loading="lazy"
+          class="h-full w-full object-cover opacity-50"
+        />
         <div class="absolute inset-x-0 bottom-1/4 ocean-shimmer">
           <div class="mx-auto h-52 max-w-5xl rounded-full bg-[var(--ss-ocean-300)]/25 blur-3xl" />
         </div>

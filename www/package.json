@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "optimize:images": "node scripts/optimize-images.mjs",
+    "import:photos": "node scripts/import-property-photos.mjs",
     "deploy:hosting": "node scripts/deploy-hosting.mjs"
   },
   "dependencies": {

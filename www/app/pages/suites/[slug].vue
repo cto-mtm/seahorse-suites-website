@@ -8,6 +8,7 @@ useScrollReveal()
 
 const suites = useSuites()
 const allAmenities = useAmenities()
+const photos = usePropertyPhotos()
 
 const suite = computed(() =>
   suites.value.find(s => s.slug === route.params.slug)
@@ -16,6 +17,13 @@ const suite = computed(() =>
 if (!suite.value) {
   throw createError({ statusCode: 404, statusMessage: 'Suite not found', fatal: true })
 }
+
+const suitePhotos = computed(() => photos.suites[suite.value?.slug ?? ''])
+
+/** Side tiles for the gallery grid — the shoot's next shots, minus the hero */
+const galleryTiles = computed(() =>
+  (suitePhotos.value?.photos ?? []).filter(p => p.src !== suitePhotos.value?.hero.src).slice(0, 4)
+)
 
 /** This suite's amenities, drawn from the shared amenity catalogue */
 const suiteAmenities = computed(() =>
@@ -77,26 +85,26 @@ useSeoMeta({
 
     <section class="bg-white py-16 md:py-24">
       <div class="mx-auto max-w-6xl px-5 md:px-8">
-        <!--
-          GALLERY — replace the gradient placeholders with real photos.
-          Drop files into /public/images/suites/<slug>/ and swap:
-          <NuxtImg :src="`/images/suites/${suite.slug}/main.webp`" :alt="suite.title" class="h-full w-full object-cover" />
-          <NuxtImg :src="`/images/suites/${suite.slug}/1.webp`" alt="..." class="h-full w-full object-cover" />
-          ... (2.webp, 3.webp, 4.webp)
-        -->
         <div class="grid gap-4 md:grid-cols-4 md:grid-rows-2">
           <div class="reveal-scale relative h-72 overflow-hidden rounded-3xl shadow-coastal md:col-span-2 md:row-span-2 md:h-auto">
-            <div class="flex h-full w-full items-center justify-center bg-gradient-to-br" :class="suite.gradient">
-              <UIcon :name="suite.icon" class="size-20 text-white/60" />
-            </div>
+            <NuxtImg
+              :src="suitePhotos?.hero.src"
+              :alt="suite.title"
+              class="h-full w-full object-cover"
+            />
           </div>
           <div
-            v-for="n in 4"
-            :key="n"
-            class="reveal-scale hidden h-44 items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br shadow-coastal md:flex"
-            :class="[suite.gradient, `reveal-delay-${(n % 3) + 1}`]"
+            v-for="(photo, n) in galleryTiles"
+            :key="photo.src"
+            class="reveal-scale hidden h-44 overflow-hidden rounded-2xl shadow-coastal md:block"
+            :class="`reveal-delay-${(n % 3) + 1}`"
           >
-            <UIcon name="i-lucide-image" class="size-8 text-white/50" />
+            <NuxtImg
+              :src="photo.thumb"
+              :alt="t('Suites.photoAlt', { title: suite.title, n: n + 1 })"
+              loading="lazy"
+              class="h-full w-full object-cover"
+            />
           </div>
         </div>
 
@@ -134,6 +142,21 @@ useSeoMeta({
                     <p class="text-xs text-[var(--ss-ocean-700)]">{{ amenity.desc }}</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <!-- Floor plan -->
+            <div v-if="suitePhotos?.floorPlan" class="reveal reveal-delay-2 mt-12">
+              <p class="eyebrow">{{ t('Suites.floorPlan') }}</p>
+              <div class="mt-5 overflow-hidden rounded-2xl border border-[var(--ss-ocean-100)] bg-white">
+                <NuxtImg
+                  :src="suitePhotos.floorPlan.src"
+                  :alt="t('Suites.floorPlanAlt', { title: suite.title })"
+                  :width="suitePhotos.floorPlan.width"
+                  :height="suitePhotos.floorPlan.height"
+                  loading="lazy"
+                  class="h-auto w-full"
+                />
               </div>
             </div>
           </div>
@@ -215,8 +238,13 @@ useSeoMeta({
             class="group reveal overflow-hidden rounded-2xl bg-white shadow-coastal transition-all duration-500 hover:-translate-y-1"
             :class="`reveal-delay-${(i % 3) + 1}`"
           >
-            <div class="flex h-28 items-center justify-center bg-gradient-to-br transition-transform duration-700 group-hover:scale-105" :class="other.gradient">
-              <UIcon :name="other.icon" class="size-8 text-white/70" />
+            <div class="h-28 overflow-hidden">
+              <NuxtImg
+                :src="photos.suites[other.slug]?.hero.thumb"
+                :alt="other.title"
+                loading="lazy"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
             <div class="p-4">
               <p class="font-display text-lg leading-tight">{{ other.title }}</p>

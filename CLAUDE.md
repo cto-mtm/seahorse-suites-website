@@ -5,6 +5,8 @@
 - `www/` — Nuxt 4 marketing website
 - `firebase/` — Firebase Hosting config + Cloud Functions
 - `docs/` — Internal documentation
+- `photos/` — Raw property photography originals (4000px JPGs; never served directly)
+- `logos/` — Logo originals
 
 ## Development
 
@@ -35,3 +37,8 @@
 - **Amenities (real, 8):** high-speed WiFi, complimentary guest bicycles, laundry facilities, beach essentials (towels/chairs/umbrellas), pet-friendly, shared patios + fire pit, fully equipped kitchens, free on-site parking (rear of building).
 - **Nearby:** Sanibel Lighthouse & fishing pier, J.N. "Ding" Darling National Wildlife Refuge, world-famous shelling beaches ("Sanibel Stoop"), Magic Bus on Sanibel (ice cream/candy/coffee), Wickies Lighthouse Restaurant, EmOcean (beachwear/souvenirs).
 - **Bookings:** Airbnb host profile lists all properties (https://www.airbnb.com/users/profile/1529338761913645803); Vrbo needs one direct URL per suite. Both live in `www/app/app.config.ts` → `booking`.
+
+## Property Photos
+- Raw originals live in repo-root `photos/` (`unit_N/{PHOTOS,FLOOR PLAN}`, `aerial_photos`, `exterior_photos`). Photographer numbering: 1–32 aerial · 33–53 exterior · 54–95 unit 5 · 96–126 unit 4 · 127–153 unit 3 · 154–176 unit 2 · 177–197 unit 1. (The delivery originally had unit 1's block copied into every unit folder; those 84 strays were deleted — the importer's per-unit number ranges also guard against any reappearing.)
+- Unit ↔ suite mapping: 1 = Seahorse Retreat · 2 = Sunset Haven · 3 = Coastal Bliss · 4 = Ocean Breeze · 5 = Beachside Escape (mirrors `useSuites()`).
+- `npm run import:photos` (in `www/`) converts raws to 1920px webp under `www/public/images/suites/<slug>/` + `www/public/images/property/{aerial,exterior}/` and regenerates the manifest `www/app/data/property-photos.json` (photo lists + per-suite hero). Components read it via `usePropertyPhotos()` — never hardcode gallery paths. Hero picks live in the `HEROES` map inside `www/scripts/import-property-photos.mjs`.

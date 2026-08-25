@@ -20,6 +20,9 @@ export default {
     "orAsk": "Questions first?",
     "askLink": "Send us a message",
     "moreSuites": "More suites",
+    "floorPlan": "Floor plan",
+    "floorPlanAlt": "{title} floor plan",
+    "photoAlt": "{title} — photo {n}",
 
     "suite1Title": "Seahorse Retreat",
     "suite1Specs": "2 Bedrooms · 1 Bath · 850 sq ft",
@@ -87,6 +90,9 @@ export default {
     "orAsk": "¿Preguntas primero?",
     "askLink": "Envíanos un mensaje",
     "moreSuites": "Más suites",
+    "floorPlan": "Plano",
+    "floorPlanAlt": "Plano de {title}",
+    "photoAlt": "{title} — foto {n}",
 
     "suite1Title": "Seahorse Retreat",
     "suite1Specs": "2 habitaciones · 1 baño · 79 m²",
