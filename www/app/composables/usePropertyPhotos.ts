@@ -22,6 +22,8 @@ export interface PropertyPhotos {
     exterior: PhotoRef[]
     /** Named pick: aerial backdrop for the homepage attractions band */
     parallax: PhotoRef
+    /** Curated photo band for the /amenities page, in display order */
+    amenityGallery: PhotoRef[]
   }
 }
 

@@ -39,6 +39,15 @@ export default {
     "parkingDesc": "Free parking available for all our guests at rear of building.",
     "parkingLong": "Free parking for all guests at the rear of the building. Park once — nearly everything worth doing on the east end is a walk or bike ride away.",
 
+    "galleryEyebrow": "A closer look",
+    "galleryTitle": "The little things, ready and waiting",
+    "galleryAlt1": "Complimentary guest bicycles lined up by the stairs",
+    "galleryAlt2": "Beach wagons, chairs, and boards ready to borrow",
+    "galleryAlt3": "Fully equipped kitchen with breakfast bar",
+    "galleryAlt4": "Patio table and chairs under the blue shade sail",
+    "galleryAlt5": "Backyard with lawn games and shaded seating",
+    "galleryAlt6": "Porch chairs with beach-themed decor",
+
     "ctaTitle": "Ready when you are.",
     "ctaButton": "Book Now"
   },
@@ -81,6 +90,15 @@ export default {
     "parkingTitle": "Parking en la propiedad",
     "parkingDesc": "Aparcamiento gratuito para todos nuestros huéspedes en la parte trasera.",
     "parkingLong": "Aparcamiento gratuito para todos los huéspedes en la parte trasera del edificio. Aparca una vez — casi todo lo que vale la pena en el extremo este está a un paseo a pie o en bici.",
+
+    "galleryEyebrow": "De cerca",
+    "galleryTitle": "Los pequeños detalles, listos para ti",
+    "galleryAlt1": "Bicicletas de cortesía junto a las escaleras",
+    "galleryAlt2": "Carritos, sillas y tablas de playa listos para usar",
+    "galleryAlt3": "Cocina totalmente equipada con barra de desayuno",
+    "galleryAlt4": "Mesa de patio bajo la vela de sombra azul",
+    "galleryAlt5": "Patio trasero con juegos y asientos a la sombra",
+    "galleryAlt6": "Sillas del porche con decoración playera",
 
     "ctaTitle": "Listos cuando tú lo estés.",
     "ctaButton": "Reservar"

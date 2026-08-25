@@ -9,7 +9,16 @@ useSeoMeta({
 useScrollReveal()
 
 const amenities = useAmenities()
+const photos = usePropertyPhotos()
 const { open: openBooking } = useBookingModal()
+
+/** Curated amenity photos paired with their localized alt text */
+const gallery = computed(() =>
+  photos.property.amenityGallery.map((photo, i) => ({
+    ...photo,
+    alt: t(`Amenities.galleryAlt${i + 1}`)
+  }))
+)
 </script>
 
 <template>
@@ -42,6 +51,31 @@ const { open: openBooking } = useBookingModal()
               <p class="mt-3 leading-relaxed text-[var(--ss-ocean-800)]">{{ amenity.long }}</p>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo band -->
+    <section class="bg-white pb-16 md:pb-24">
+      <div class="mx-auto max-w-6xl px-5 md:px-8">
+        <div class="text-center">
+          <p class="reveal eyebrow">{{ t('Amenities.galleryEyebrow') }}</p>
+          <h2 class="reveal reveal-delay-1 mt-4 font-display text-3xl md:text-4xl">{{ t('Amenities.galleryTitle') }}</h2>
+        </div>
+        <div class="mt-10 grid gap-4 grid-cols-2 md:grid-cols-3">
+          <div
+            v-for="(photo, i) in gallery"
+            :key="photo.src"
+            class="reveal-scale h-48 overflow-hidden rounded-2xl shadow-coastal md:h-56"
+            :class="`reveal-delay-${(i % 3) + 1}`"
+          >
+            <NuxtImg
+              :src="photo.thumb"
+              :alt="photo.alt"
+              loading="lazy"
+              class="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+            />
+          </div>
         </div>
       </div>
     </section>

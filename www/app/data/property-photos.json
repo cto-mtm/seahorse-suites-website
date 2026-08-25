@@ -862,6 +862,32 @@
     "parallax": {
       "src": "/images/property/aerial/13.webp",
       "thumb": "/images/property/aerial/13-thumb.webp"
-    }
+    },
+    "amenityGallery": [
+      {
+        "src": "/images/property/exterior/46.webp",
+        "thumb": "/images/property/exterior/46-thumb.webp"
+      },
+      {
+        "src": "/images/suites/beachside-escape/055.webp",
+        "thumb": "/images/suites/beachside-escape/055-thumb.webp"
+      },
+      {
+        "src": "/images/suites/seahorse-retreat/186.webp",
+        "thumb": "/images/suites/seahorse-retreat/186-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/36.webp",
+        "thumb": "/images/property/exterior/36-thumb.webp"
+      },
+      {
+        "src": "/images/property/exterior/37.webp",
+        "thumb": "/images/property/exterior/37-thumb.webp"
+      },
+      {
+        "src": "/images/suites/beachside-escape/056.webp",
+        "thumb": "/images/suites/beachside-escape/056-thumb.webp"
+      }
+    ]
   }
 }

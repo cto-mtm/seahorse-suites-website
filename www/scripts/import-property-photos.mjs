@@ -69,6 +69,19 @@ const PROPERTY_PICKS = {
   parallax: 13 // beach coastline aerial behind the homepage attractions band
 }
 
+/**
+ * Photo band on the /amenities page (photographer numbers from any set),
+ * in display order. Validated like HEROES.
+ */
+const AMENITY_GALLERY = [
+  46, // guest bikes lined up by the stairs
+  55, // beach gear: wagons, chairs, boards
+  186, // fully equipped kitchen (unit 1)
+  36, // patio table under the blue shade sail
+  37, // backyard with lawn games
+  56 // porch adirondack chairs, "gone to the beach" signs
+]
+
 const photoNumber = f => {
   const m = f.match(/LN-(\d+)\.jpe?g$/i)
   return m ? parseInt(m[1], 10) : null
@@ -128,10 +141,13 @@ const toRef = ({ src, thumb }) => ({ src, thumb })
 
 async function main() {
   const manifest = { suites: {}, property: {} }
+  // Every imported photo by its photographer number (globally unique across sets)
+  const allPhotos = []
 
   for (const { dir, slug, range } of UNITS) {
     const urlBase = `/images/suites/${slug}`
     const photos = await importSet(join(rawPhotos, dir, 'PHOTOS'), urlBase, { pad: 3, keep: range })
+    allPhotos.push(...photos)
     if (!photos.length) throw new Error(`${slug}: no photos imported from ${dir}/PHOTOS`)
 
     // Floor plan (one file per unit folder); dimensions recorded for CLS-free rendering
@@ -156,10 +172,12 @@ async function main() {
 
   const aerial = await importSet(join(rawPhotos, 'aerial_photos'), '/images/property/aerial', { pad: 2, keep: [1, 32] })
   const exterior = await importSet(join(rawPhotos, 'exterior_photos'), '/images/property/exterior', { pad: 2, keep: [33, 53] })
+  allPhotos.push(...aerial, ...exterior)
   manifest.property = {
     aerial: aerial.map(toRef),
     exterior: exterior.map(toRef),
-    parallax: pick(aerial, PROPERTY_PICKS.parallax, 'property parallax')
+    parallax: pick(aerial, PROPERTY_PICKS.parallax, 'property parallax'),
+    amenityGallery: AMENITY_GALLERY.map(n => pick(allPhotos, n, 'amenity gallery'))
   }
   console.log(`✓ property: ${aerial.length} aerial + ${exterior.length} exterior photos`)
 
