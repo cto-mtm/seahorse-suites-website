@@ -82,6 +82,22 @@ const AMENITY_GALLERY = [
   56 // porch adirondack chairs, "gone to the beach" signs
 ]
 
+/**
+ * /explore attraction imagery. Numbers reference photographer photos already
+ * imported above (reused in place, no duplicate files); strings reference
+ * source files in photos/explore/<slug>/ — e.g. the public-domain USFWS
+ * downloads for Ding Darling (see photos/explore/ding-darling/CREDITS.md).
+ * `null` = no licensed photo yet; the pages fall back to the gradient tile.
+ */
+const EXPLORE = {
+  'lighthouse': { hero: 10, gallery: [9, 29] }, // aerial tower · lighthouse point · sunset silhouette
+  'ding-darling': { hero: 'spoonbills', gallery: ['mangroves', 'pelicans'] },
+  'shelling': { hero: 13, gallery: [22, 15] }, // shore aerial · gulf beach · beach access path
+  'magic-bus': null,
+  'wickies': { hero: 51, gallery: [] }, // their A-frame from the street
+  'emocean': null
+}
+
 const photoNumber = f => {
   const m = f.match(/LN-(\d+)\.jpe?g$/i)
   return m ? parseInt(m[1], 10) : null
@@ -180,6 +196,28 @@ async function main() {
     amenityGallery: AMENITY_GALLERY.map(n => pick(allPhotos, n, 'amenity gallery'))
   }
   console.log(`✓ property: ${aerial.length} aerial + ${exterior.length} exterior photos`)
+
+  manifest.explore = {}
+  for (const [slug, cfg] of Object.entries(EXPLORE)) {
+    if (!cfg) {
+      manifest.explore[slug] = null
+      continue
+    }
+    const resolve = async (ref) => {
+      if (typeof ref === 'number') return pick(allPhotos, ref, `explore ${slug}`)
+      const srcDir = join(rawPhotos, 'explore', slug)
+      const file = readdirSync(srcDir).find(f => f.toLowerCase().replace(/\.jpe?g$/, '') === ref)
+      if (!file) throw new Error(`explore ${slug}: source file "${ref}.jpg" not found in photos/explore/${slug}/`)
+      const destDir = join(publicImages, 'explore', slug)
+      await convert(join(srcDir, file), join(destDir, `${ref}.webp`))
+      await convert(join(srcDir, file), join(destDir, `${ref}-thumb.webp`), { width: THUMB_WIDTH, quality: THUMB_QUALITY })
+      return { src: `/images/explore/${slug}/${ref}.webp`, thumb: `/images/explore/${slug}/${ref}-thumb.webp` }
+    }
+    const gallery = []
+    for (const ref of cfg.gallery) gallery.push(await resolve(ref))
+    manifest.explore[slug] = { hero: await resolve(cfg.hero), gallery }
+    console.log(`✓ explore/${slug}: hero + ${gallery.length} gallery`)
+  }
 
   mkdirSync(dirname(manifestPath), { recursive: true })
   writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n')

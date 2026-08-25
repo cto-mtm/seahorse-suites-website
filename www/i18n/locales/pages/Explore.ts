@@ -6,6 +6,13 @@ export default {
     "ctaTitle": "Stay a stroll away from all of it.",
     "ctaButton": "Book Now",
 
+    "metaTitle": "Explore Old Town Sanibel — Lighthouse, Shelling & Ding Darling",
+    "metaDescription": "Everything a stroll or bike ride from Seahorse Suites: the Sanibel Lighthouse, world-famous shelling beaches, Ding Darling refuge, and the east end's favorite local stops.",
+    "eyebrow": "Explore",
+    "indexTitle": "The Island, From Our Lane",
+    "indexSubtitle": "Gulf at one end of the lane, bay at the other — and all of this within a stroll or an easy bike ride.",
+    "photoAlt": "{title} — photo {n}",
+
     "lighthouseLabel": "Sanibel Lighthouse & fishing pier — a stroll down the beach",
     "lighthouseTitle": "Sanibel Lighthouse & Fishing Pier",
     "lighthouseTag": "The island's oldest landmark, at the end of your beach walk",
@@ -68,6 +75,12 @@ export default {
   },
   es: {
     "backToAll": "Volver a Explora",
+    "metaTitle": "Explora el Viejo Sanibel — faro, conchas y Ding Darling",
+    "metaDescription": "Todo a un paseo o pedaleo de Seahorse Suites: el faro de Sanibel, playas de conchas de fama mundial, el refugio Ding Darling y los rincones favoritos del este de la isla.",
+    "eyebrow": "Explora",
+    "indexTitle": "La isla, desde nuestra calle",
+    "indexSubtitle": "El Golfo a un extremo de la calle, la bahía al otro — y todo esto a un paseo o un corto trayecto en bici.",
+    "photoAlt": "{title} — foto {n}",
     "highlightsTitle": "No te pierdas",
     "gettingThere": "Cómo llegar",
     "ctaTitle": "Alójate a un paseo de todo esto.",

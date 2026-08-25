@@ -889,5 +889,64 @@
         "thumb": "/images/suites/beachside-escape/056-thumb.webp"
       }
     ]
+  },
+  "explore": {
+    "lighthouse": {
+      "hero": {
+        "src": "/images/property/aerial/10.webp",
+        "thumb": "/images/property/aerial/10-thumb.webp"
+      },
+      "gallery": [
+        {
+          "src": "/images/property/aerial/09.webp",
+          "thumb": "/images/property/aerial/09-thumb.webp"
+        },
+        {
+          "src": "/images/property/aerial/29.webp",
+          "thumb": "/images/property/aerial/29-thumb.webp"
+        }
+      ]
+    },
+    "ding-darling": {
+      "hero": {
+        "src": "/images/explore/ding-darling/spoonbills.webp",
+        "thumb": "/images/explore/ding-darling/spoonbills-thumb.webp"
+      },
+      "gallery": [
+        {
+          "src": "/images/explore/ding-darling/mangroves.webp",
+          "thumb": "/images/explore/ding-darling/mangroves-thumb.webp"
+        },
+        {
+          "src": "/images/explore/ding-darling/pelicans.webp",
+          "thumb": "/images/explore/ding-darling/pelicans-thumb.webp"
+        }
+      ]
+    },
+    "shelling": {
+      "hero": {
+        "src": "/images/property/aerial/13.webp",
+        "thumb": "/images/property/aerial/13-thumb.webp"
+      },
+      "gallery": [
+        {
+          "src": "/images/property/aerial/22.webp",
+          "thumb": "/images/property/aerial/22-thumb.webp"
+        },
+        {
+          "src": "/images/property/aerial/15.webp",
+          "thumb": "/images/property/aerial/15-thumb.webp"
+        }
+      ]
+    },
+    "magic-bus": null,
+    "wickies": {
+      "hero": {
+        "src": "/images/property/exterior/51.webp",
+        "thumb": "/images/property/exterior/51-thumb.webp"
+      },
+      "gallery": []
+    },
+    "emocean": null
   }
 }

@@ -25,6 +25,11 @@ export interface PropertyPhotos {
     /** Curated photo band for the /amenities page, in display order */
     amenityGallery: PhotoRef[]
   }
+  /**
+   * Imagery per /explore attraction slug. `null` = no licensed photo yet
+   * (pages fall back to the gradient tile).
+   */
+  explore: Record<string, { hero: PhotoRef, gallery: PhotoRef[] } | null>
 }
 
 /**

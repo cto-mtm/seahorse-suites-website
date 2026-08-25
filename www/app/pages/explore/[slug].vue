@@ -14,6 +14,9 @@ if (!attraction.value) {
   throw createError({ statusCode: 404, statusMessage: 'Location not found', fatal: true })
 }
 
+const photos = usePropertyPhotos()
+const attractionPhotos = computed(() => photos.explore[attraction.value?.slug ?? ''] ?? null)
+
 const { open: openBooking } = useBookingModal()
 
 // Site name is appended automatically by the SEO module's title template
@@ -28,7 +31,7 @@ useSeoMeta({
     <!-- Dark ocean band behind the transparent header -->
     <section class="ocean-bg px-5 pb-16 pt-36 text-center text-white md:pb-24 md:pt-44">
       <NuxtLink
-        :to="localePath('index') + '#attractions'"
+        :to="localePath('explore')"
         class="animate-fade-up inline-flex items-center gap-2 text-xs font-semibold tracking-brand-wide uppercase text-[var(--ss-ocean-300)] transition-colors hover:text-white"
       >
         <UIcon name="i-lucide-arrow-left" class="size-4" />
@@ -44,13 +47,14 @@ useSeoMeta({
 
     <section class="bg-white py-16 md:py-24">
       <div class="mx-auto max-w-5xl px-5 md:px-8">
-        <!--
-          HERO IMAGE PLACEHOLDER — replace with a real photo:
-          <NuxtImg :src="`/images/explore/${attraction.slug}/hero.webp`" :alt="attraction.title"
-            class="h-full w-full object-cover" />
-        -->
         <div class="reveal-scale relative h-72 overflow-hidden rounded-3xl shadow-coastal md:h-[28rem]">
-          <div class="flex h-full w-full items-center justify-center bg-gradient-to-br" :class="attraction.gradient">
+          <NuxtImg
+            v-if="attractionPhotos"
+            :src="attractionPhotos.hero.src"
+            :alt="attraction.title"
+            class="h-full w-full object-cover"
+          />
+          <div v-else class="flex h-full w-full items-center justify-center bg-gradient-to-br" :class="attraction.gradient">
             <UIcon :name="attraction.icon" class="size-24 text-white/60" />
           </div>
         </div>
@@ -61,19 +65,18 @@ useSeoMeta({
             <p class="text-lg leading-relaxed text-[var(--ss-ocean-900)]">{{ attraction.body1 }}</p>
             <p class="mt-6 leading-relaxed text-[var(--ss-ocean-800)]">{{ attraction.body2 }}</p>
 
-            <!--
-              GALLERY PLACEHOLDERS — replace with real photos:
-              <NuxtImg :src="`/images/explore/${attraction.slug}/1.webp`" alt="..." class="h-52 w-full rounded-2xl object-cover" />
-              <NuxtImg :src="`/images/explore/${attraction.slug}/2.webp`" alt="..." class="h-52 w-full rounded-2xl object-cover" />
-            -->
-            <div class="mt-10 grid gap-5 sm:grid-cols-2">
+            <div v-if="attractionPhotos?.gallery.length" class="mt-10 grid gap-5 sm:grid-cols-2">
               <div
-                v-for="n in 2"
-                :key="n"
-                class="reveal-scale flex h-52 items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br shadow-coastal"
-                :class="attraction.gradient"
+                v-for="(photo, n) in attractionPhotos.gallery"
+                :key="photo.src"
+                class="reveal-scale h-52 overflow-hidden rounded-2xl shadow-coastal"
               >
-                <UIcon name="i-lucide-image" class="size-10 text-white/50" />
+                <NuxtImg
+                  :src="photo.thumb"
+                  :alt="t('Explore.photoAlt', { title: attraction.title, n: n + 1 })"
+                  loading="lazy"
+                  class="h-full w-full object-cover"
+                />
               </div>
             </div>
           </div>
