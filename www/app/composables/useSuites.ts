@@ -20,7 +20,7 @@ export interface Suite {
   maxGuests: number
 }
 
-const SHARED_AMENITIES = ['wifi', 'bikes', 'laundry', 'beach', 'patio', 'kitchen', 'parking']
+const SHARED_AMENITIES = ['wifi', 'laundry', 'beach', 'patio', 'kitchen', 'parking']
 
 const defs = [
   { n: 1, slug: 'seahorse-retreat', icon: 'i-lucide-shell', amenityKeys: [...SHARED_AMENITIES, 'pets'], bedrooms: 2, maxGuests: 6 },

@@ -34,7 +34,7 @@
 - **Property:** Seahorse Suites, 1167 Buttonwood Lane, Sanibel, FL 33957 — Old Town Sanibel (historic east end), Gulf at one end of the lane, San Carlos Bay at the other.
 - **Contact:** seahorsesuites@gmail.com · 573 529 1529. No social media accounts.
 - **Suites (real, 5):** Seahorse Retreat (2BR/1BA, 850 sqft, pet-friendly) · Sunset Haven (1BR + twin bunk/1BA, 850 sqft) · Coastal Bliss (2BR/1BA, 900 sqft, pet-friendly) · Ocean Breeze (2BR/1BA, 950 sqft, family/backyard) · Beachside Escape (2BR/2BA, 1,000 sqft, largest). No public nightly rates — never invent prices.
-- **Amenities (real, 8):** high-speed WiFi, complimentary guest bicycles, laundry facilities, beach essentials (towels/chairs/umbrellas), pet-friendly, shared patios + fire pit, fully equipped kitchens, free on-site parking (rear of building).
+- **Amenities (real, 7):** high-speed WiFi, laundry facilities, beach essentials (towels/chairs/umbrellas), pet-friendly (fee applies), shared patios + fire pit, fully equipped kitchens, free on-site parking (rear of building).
 - **Nearby:** Sanibel Lighthouse & fishing pier, J.N. "Ding" Darling National Wildlife Refuge, world-famous shelling beaches ("Sanibel Stoop"), Magic Bus on Sanibel (ice cream/candy/coffee), Wickies Lighthouse Restaurant, EmOcean (beachwear/souvenirs).
 - **Bookings:** Airbnb host profile lists all properties (https://www.airbnb.com/users/profile/1529338761913645803); Vrbo needs one direct URL per suite. Both live in `www/app/app.config.ts` → `booking`.
 

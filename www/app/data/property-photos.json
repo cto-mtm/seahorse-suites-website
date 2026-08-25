@@ -865,10 +865,6 @@
     },
     "amenityGallery": [
       {
-        "src": "/images/property/exterior/46.webp",
-        "thumb": "/images/property/exterior/46-thumb.webp"
-      },
-      {
         "src": "/images/suites/beachside-escape/055.webp",
         "thumb": "/images/suites/beachside-escape/055-thumb.webp"
       },

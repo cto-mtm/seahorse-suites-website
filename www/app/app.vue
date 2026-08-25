@@ -34,7 +34,6 @@ useSchemaOrg([
     petsAllowed: true,
     amenityFeature: [
       { '@type': 'LocationFeatureSpecification', name: 'High-speed WiFi', value: true },
-      { '@type': 'LocationFeatureSpecification', name: 'Complimentary bicycles', value: true },
       { '@type': 'LocationFeatureSpecification', name: 'Laundry facilities', value: true },
       { '@type': 'LocationFeatureSpecification', name: 'Beach essentials provided', value: true },
       { '@type': 'LocationFeatureSpecification', name: 'Patios with fire pit', value: true },

@@ -1,7 +1,7 @@
 export default {
   en: {
     "metaTitle": "Request a Reservation — Book Direct",
-    "metaDescription": "Request your Seahorse Suites stay directly. Pick your suite, dates, and party size — we'll confirm availability by email or WhatsApp. Or book on Airbnb or Vrbo.",
+    "metaDescription": "Request your Seahorse Suites stay directly. Pick your suite, dates, and party size — we'll confirm availability by email, phone, or WhatsApp. Or book on Airbnb or Vrbo.",
     "eyebrow": "Book direct",
     "title": "Request a Reservation",
     "subtitle": "Tell us your dates and party — we'll confirm availability personally. Booking direct means no platform fees and a real person on the other end.",
@@ -18,6 +18,7 @@ export default {
     "childrenLabel": "Children",
     "petsLabel": "Pets",
     "petsDisabledHint": "This suite isn't pet-friendly. Seahorse Retreat and Coastal Bliss welcome pets.",
+    "petFeeWarning": "A pet fee applies to all stays with animals. We'll include the details in your booking confirmation.",
     "decrease": "Decrease",
     "increase": "Increase",
 
@@ -35,9 +36,10 @@ export default {
     "sending": "Sending...",
     "validationHint": "Please add your name, a valid email, and check-in / check-out dates.",
     "success": "Thank you — we've received your request and will confirm availability shortly.",
-    "error": "We couldn't send it automatically. Please use Email or WhatsApp below — your details are already filled in.",
+    "error": "We couldn't send it automatically. Please use Email, Phone, or WhatsApp below — your details are already filled in.",
     "orSendVia": "or send your request via",
     "viaEmail": "Email",
+    "viaPhone": "Call Us",
     "viaWhatsApp": "WhatsApp",
 
     "alsoOnHeading": "Prefer a booking platform?",
@@ -59,7 +61,7 @@ export default {
   },
   es: {
     "metaTitle": "Solicita una reserva — Reserva directa",
-    "metaDescription": "Solicita tu estancia en Seahorse Suites directamente. Elige suite, fechas y número de personas — confirmamos disponibilidad por correo o WhatsApp. O reserva en Airbnb o Vrbo.",
+    "metaDescription": "Solicita tu estancia en Seahorse Suites directamente. Elige suite, fechas y número de personas — confirmamos disponibilidad por correo, teléfono o WhatsApp. O reserva en Airbnb o Vrbo.",
     "eyebrow": "Reserva directa",
     "title": "Solicita una reserva",
     "subtitle": "Cuéntanos tus fechas y tu grupo — confirmaremos la disponibilidad en persona. Reservar directo significa sin comisiones de plataforma y una persona real al otro lado.",
@@ -76,6 +78,7 @@ export default {
     "childrenLabel": "Niños",
     "petsLabel": "Mascotas",
     "petsDisabledHint": "Esta suite no admite mascotas. Seahorse Retreat y Coastal Bliss sí las reciben.",
+    "petFeeWarning": "Se aplica una tarifa por mascota en todas las estancias con animales. Incluiremos los detalles en la confirmación de tu reserva.",
     "decrease": "Disminuir",
     "increase": "Aumentar",
 
@@ -93,9 +96,10 @@ export default {
     "sending": "Enviando...",
     "validationHint": "Añade tu nombre, un correo válido y las fechas de entrada y salida.",
     "success": "Gracias — hemos recibido tu solicitud y confirmaremos la disponibilidad pronto.",
-    "error": "No pudimos enviarla automáticamente. Usa Correo o WhatsApp abajo — tus datos ya están rellenados.",
+    "error": "No pudimos enviarla automáticamente. Usa Correo, Teléfono o WhatsApp abajo — tus datos ya están rellenados.",
     "orSendVia": "o envía tu solicitud por",
     "viaEmail": "Correo",
+    "viaPhone": "Llamar",
     "viaWhatsApp": "WhatsApp",
 
     "alsoOnHeading": "¿Prefieres una plataforma de reservas?",

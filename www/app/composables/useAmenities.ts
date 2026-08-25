@@ -12,7 +12,6 @@ export function useAmenities() {
 
   const defs = [
     { key: 'wifi', icon: 'i-lucide-wifi' },
-    { key: 'bikes', icon: 'i-lucide-bike' },
     { key: 'laundry', icon: 'i-lucide-washing-machine' },
     { key: 'beach', icon: 'i-lucide-umbrella' },
     { key: 'pets', icon: 'i-lucide-paw-print' },

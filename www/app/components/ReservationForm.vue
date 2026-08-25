@@ -287,6 +287,10 @@ const labelClass =
         </div>
       </div>
       <p v-if="!petsAllowed" class="mt-2 text-xs text-[var(--ss-ocean-600)]">{{ t('Reserve.petsDisabledHint') }}</p>
+      <p v-else-if="form.pets > 0" class="mt-2 flex items-start gap-1.5 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-800">
+        <UIcon name="i-lucide-alert-triangle" class="mt-0.5 size-3.5 shrink-0" />
+        <span>{{ t('Reserve.petFeeWarning') }}</span>
+      </p>
     </fieldset>
 
     <!-- Contact -->
@@ -384,7 +388,7 @@ const labelClass =
       <p class="text-center text-xs font-semibold tracking-brand-wide uppercase text-[var(--ss-ocean-500)]">
         {{ t('Reserve.orSendVia') }}
       </p>
-      <div class="mt-4 grid gap-3 sm:grid-cols-2">
+      <div class="mt-4 grid gap-3 sm:grid-cols-3">
         <button
           type="button"
           class="group flex items-center justify-center gap-2.5 rounded-full border border-[var(--ss-ocean-200)] py-3.5 text-sm font-bold tracking-brand uppercase text-[var(--ss-ocean-800)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
@@ -393,6 +397,13 @@ const labelClass =
           <UIcon name="i-lucide-mail" class="size-4.5 text-[var(--ss-ocean-500)]" />
           {{ t('Reserve.viaEmail') }}
         </button>
+        <a
+          :href="`tel:${appConfig.contact.phoneE164}`"
+          class="group flex items-center justify-center gap-2.5 rounded-full border border-[var(--ss-ocean-200)] py-3.5 text-sm font-bold tracking-brand uppercase text-[var(--ss-ocean-800)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
+        >
+          <UIcon name="i-lucide-phone" class="size-4.5 text-[var(--ss-ocean-500)]" />
+          {{ t('Reserve.viaPhone') }}
+        </a>
         <button
           type="button"
           class="group flex items-center justify-center gap-2.5 rounded-full border border-[var(--ss-ocean-200)] py-3.5 text-sm font-bold tracking-brand uppercase text-[var(--ss-ocean-800)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"

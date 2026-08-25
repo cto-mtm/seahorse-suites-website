@@ -74,7 +74,6 @@ const PROPERTY_PICKS = {
  * in display order. Validated like HEROES.
  */
 const AMENITY_GALLERY = [
-  46, // guest bikes lined up by the stairs
   55, // beach gear: wagons, chairs, boards
   186, // fully equipped kitchen (unit 1)
   36, // patio table under the blue shade sail

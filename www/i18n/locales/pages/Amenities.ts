@@ -1,7 +1,7 @@
 export default {
   en: {
-    "metaTitle": "Amenities — WiFi, Free Bikes, Beach Gear & More",
-    "metaDescription": "Every Seahorse Suites stay includes high-speed WiFi, complimentary bicycles, beach essentials, laundry, fully equipped kitchens, patios with a fire pit, and free parking.",
+    "metaTitle": "Amenities — WiFi, Beach Gear, Pet-Friendly & More",
+    "metaDescription": "Every Seahorse Suites stay includes high-speed WiFi, beach essentials, laundry, fully equipped kitchens, patios with a fire pit, and free parking.",
     "eyebrow": "Everything you need",
     "title": "Thoughtfully designed for your comfort",
     "pageTitle": "Amenities",
@@ -10,10 +10,6 @@ export default {
     "wifiTitle": "High-Speed WiFi",
     "wifiDesc": "Stay connected with fast and reliable internet access.",
     "wifiLong": "Fast, reliable internet in every suite — stream, video call, or share your shelling haul without a hiccup. Or ignore it entirely; the island won't mind.",
-
-    "bikesTitle": "Bicycles for Guests",
-    "bikesDesc": "Explore the surroundings with our complimentary bikes.",
-    "bikesLong": "Sanibel has over 25 miles of flat, shaded shared-use paths — the best way to see the island. Grab one of our complimentary bikes and pedal to the lighthouse, Ding Darling, or breakfast.",
 
     "laundryTitle": "Laundry Facilities",
     "laundryDesc": "Communal washer and dryer for added convenience.",
@@ -24,8 +20,8 @@ export default {
     "beachLong": "Beach towels, chairs, and umbrellas are ready for you — just add sunscreen. The Gulf is at one end of our lane and the bay at the other, so pick your water.",
 
     "petsTitle": "Pet-Friendly Stays",
-    "petsDesc": "Bring your furry friends along for the adventure.",
-    "petsLong": "Sanibel is one of Florida's most dog-friendly islands, and we're a dog-friendly stay on it. Leashed pups are welcome on the beach and at plenty of patios around town.",
+    "petsDesc": "Bring your furry friends along for the adventure (pet fee applies).",
+    "petsLong": "Sanibel is one of Florida's most dog-friendly islands, and we're a dog-friendly stay on it. Leashed pups are welcome on the beach and at plenty of patios around town. A pet fee applies — we'll share the details when you book.",
 
     "patioTitle": "Patios & Fire Pit",
     "patioDesc": "Relax in our shared outdoor space with seating and fire pit.",
@@ -41,19 +37,18 @@ export default {
 
     "galleryEyebrow": "A closer look",
     "galleryTitle": "The little things, ready and waiting",
-    "galleryAlt1": "Complimentary guest bicycles lined up by the stairs",
-    "galleryAlt2": "Beach wagons, chairs, and boards ready to borrow",
-    "galleryAlt3": "Fully equipped kitchen with breakfast bar",
-    "galleryAlt4": "Patio table and chairs under the blue shade sail",
-    "galleryAlt5": "Backyard with lawn games and shaded seating",
-    "galleryAlt6": "Porch chairs with beach-themed decor",
+    "galleryAlt1": "Beach wagons, chairs, and boards ready to borrow",
+    "galleryAlt2": "Fully equipped kitchen with breakfast bar",
+    "galleryAlt3": "Patio table and chairs under the blue shade sail",
+    "galleryAlt4": "Backyard with lawn games and shaded seating",
+    "galleryAlt5": "Porch chairs with beach-themed decor",
 
     "ctaTitle": "Ready when you are.",
     "ctaButton": "Book Now"
   },
   es: {
-    "metaTitle": "Servicios — WiFi, bicis gratis, equipo de playa y más",
-    "metaDescription": "Toda estancia en Seahorse Suites incluye WiFi de alta velocidad, bicicletas de cortesía, esenciales de playa, lavandería, cocinas equipadas, patios con fogata y parking gratuito.",
+    "metaTitle": "Servicios — WiFi, equipo de playa, admite mascotas y más",
+    "metaDescription": "Toda estancia en Seahorse Suites incluye WiFi de alta velocidad, esenciales de playa, lavandería, cocinas equipadas, patios con fogata y parking gratuito.",
     "eyebrow": "Todo lo que necesitas",
     "title": "Diseñado con cuidado para tu confort",
     "pageTitle": "Servicios",
@@ -62,10 +57,6 @@ export default {
     "wifiTitle": "WiFi de alta velocidad",
     "wifiDesc": "Mantente conectado con internet rápido y fiable.",
     "wifiLong": "Internet rápido y fiable en cada suite — haz streaming, videollamadas o comparte tus conchas sin interrupciones. O ignóralo por completo; a la isla no le importará.",
-
-    "bikesTitle": "Bicicletas para huéspedes",
-    "bikesDesc": "Explora los alrededores con nuestras bicis de cortesía.",
-    "bikesLong": "Sanibel tiene más de 40 km de senderos llanos y sombreados — la mejor manera de ver la isla. Toma una de nuestras bicis de cortesía y pedalea hasta el faro, Ding Darling o el desayuno.",
 
     "laundryTitle": "Lavandería",
     "laundryDesc": "Lavadora y secadora comunitarias para mayor comodidad.",
@@ -76,8 +67,8 @@ export default {
     "beachLong": "Toallas de playa, sillas y sombrillas listas para ti — solo añade protector solar. El Golfo está en un extremo de nuestra calle y la bahía en el otro: elige tu agua.",
 
     "petsTitle": "Admitimos mascotas",
-    "petsDesc": "Trae a tus amigos peludos a la aventura.",
-    "petsLong": "Sanibel es una de las islas más amigables con los perros de Florida, y nosotros también. Los perros con correa son bienvenidos en la playa y en muchas terrazas del pueblo.",
+    "petsDesc": "Trae a tus amigos peludos a la aventura (aplica tarifa por mascota).",
+    "petsLong": "Sanibel es una de las islas más amigables con los perros de Florida, y nosotros también. Los perros con correa son bienvenidos en la playa y en muchas terrazas del pueblo. Aplica una tarifa por mascota — te compartimos los detalles al reservar.",
 
     "patioTitle": "Patios y fogata",
     "patioDesc": "Relájate en nuestro espacio exterior con asientos y fogata.",
@@ -93,12 +84,11 @@ export default {
 
     "galleryEyebrow": "De cerca",
     "galleryTitle": "Los pequeños detalles, listos para ti",
-    "galleryAlt1": "Bicicletas de cortesía junto a las escaleras",
-    "galleryAlt2": "Carritos, sillas y tablas de playa listos para usar",
-    "galleryAlt3": "Cocina totalmente equipada con barra de desayuno",
-    "galleryAlt4": "Mesa de patio bajo la vela de sombra azul",
-    "galleryAlt5": "Patio trasero con juegos y asientos a la sombra",
-    "galleryAlt6": "Sillas del porche con decoración playera",
+    "galleryAlt1": "Carritos, sillas y tablas de playa listos para usar",
+    "galleryAlt2": "Cocina totalmente equipada con barra de desayuno",
+    "galleryAlt3": "Mesa de patio bajo la vela de sombra azul",
+    "galleryAlt4": "Patio trasero con juegos y asientos a la sombra",
+    "galleryAlt5": "Sillas del porche con decoración playera",
 
     "ctaTitle": "Listos cuando tú lo estés.",
     "ctaButton": "Reservar"
