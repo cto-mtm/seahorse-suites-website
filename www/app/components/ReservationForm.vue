@@ -249,6 +249,7 @@ const labelClass =
       <p class="sm:col-span-2 -mt-1 text-xs text-[var(--ss-ocean-600)]">
         {{ t('Reserve.datesHint') }}
         <span v-if="nightsText" class="font-semibold text-[var(--ss-ocean-700)]">· {{ nightsText }}</span>
+        <span class="block mt-1 text-[var(--ss-ocean-500)]">{{ t('Reserve.checkInOutTimes') }}</span>
       </p>
     </div>
 

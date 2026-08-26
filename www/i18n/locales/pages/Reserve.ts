@@ -11,6 +11,7 @@ export default {
     "checkInLabel": "Check-in",
     "checkOutLabel": "Check-out",
     "datesHint": "Nights are calculated automatically.",
+    "checkInOutTimes": "Check-in after 3:00 PM · Checkout before 11:00 AM",
     "nightsSuffix": "night | nights",
 
     "guestsLabel": "Guests",
@@ -71,6 +72,7 @@ export default {
     "checkInLabel": "Entrada",
     "checkOutLabel": "Salida",
     "datesHint": "Las noches se calculan automáticamente.",
+    "checkInOutTimes": "Entrada a partir de las 3:00 PM · Salida antes de las 11:00 AM",
     "nightsSuffix": "noche | noches",
 
     "guestsLabel": "Huéspedes",

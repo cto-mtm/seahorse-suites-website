@@ -24,6 +24,13 @@ export default {
     "floorPlanAlt": "{title} floor plan",
     "photoAlt": "{title} — photo {n}",
 
+    "houseRulesHeading": "House rules",
+    "checkInRule": "Check-in after 3:00 PM",
+    "checkOutRule": "Checkout before 11:00 AM",
+    "maxGuestsRule": "{n} guests maximum",
+    "longStaysRule": "Long stays welcome (28+ days)",
+    "cancellationNote": "Cancellation: full refund at least 14 days before check-in; partial refund 7–14 days before. Long stays (28+ nights) follow a firm policy.",
+
     "suite1Title": "Seahorse Retreat",
     "suite1Specs": "2 Bedrooms · 1 Bath · 850 sq ft",
     "suite1Desc": "A unique and tranquil getaway — newly renovated, steps from the beach, and pet-friendly (fee applies).",
@@ -93,6 +100,13 @@ export default {
     "floorPlan": "Plano",
     "floorPlanAlt": "Plano de {title}",
     "photoAlt": "{title} — foto {n}",
+
+    "houseRulesHeading": "Reglas de la casa",
+    "checkInRule": "Entrada a partir de las 3:00 PM",
+    "checkOutRule": "Salida antes de las 11:00 AM",
+    "maxGuestsRule": "{n} huéspedes máximo",
+    "longStaysRule": "Estancias largas bienvenidas (28+ días)",
+    "cancellationNote": "Cancelación: reembolso total al menos 14 días antes de la entrada; reembolso parcial entre 7 y 14 días antes. Estancias largas (28+ noches) siguen una política firme.",
 
     "suite1Title": "Seahorse Retreat",
     "suite1Specs": "2 habitaciones · 1 baño · 79 m²",

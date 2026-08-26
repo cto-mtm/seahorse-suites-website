@@ -38,8 +38,14 @@ useSchemaOrg([
       { '@type': 'LocationFeatureSpecification', name: 'Beach essentials provided', value: true },
       { '@type': 'LocationFeatureSpecification', name: 'Patios with fire pit', value: true },
       { '@type': 'LocationFeatureSpecification', name: 'Fully equipped kitchens', value: true },
-      { '@type': 'LocationFeatureSpecification', name: 'Free on-site parking', value: true }
-    ]
+      { '@type': 'LocationFeatureSpecification', name: 'Free on-site parking', value: true },
+      { '@type': 'LocationFeatureSpecification', name: 'Air conditioning', value: true },
+      { '@type': 'LocationFeatureSpecification', name: 'BBQ grill', value: true },
+      { '@type': 'LocationFeatureSpecification', name: 'TV', value: true },
+      { '@type': 'LocationFeatureSpecification', name: 'Dedicated workspace', value: true }
+    ],
+    checkinTime: '15:00',
+    checkoutTime: '11:00'
   })
 ])
 </script>

@@ -159,6 +159,32 @@ useSeoMeta({
                 />
               </div>
             </div>
+
+            <!-- House rules -->
+            <div class="reveal mt-12">
+              <p class="eyebrow">{{ t('Suites.houseRulesHeading') }}</p>
+              <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                <div class="flex items-center gap-3 rounded-xl border border-[var(--ss-ocean-100)] px-4 py-3 text-sm text-[var(--ss-ocean-800)]">
+                  <UIcon name="i-lucide-log-in" class="size-4 shrink-0 text-[var(--ss-ocean-400)]" />
+                  {{ t('Suites.checkInRule') }}
+                </div>
+                <div class="flex items-center gap-3 rounded-xl border border-[var(--ss-ocean-100)] px-4 py-3 text-sm text-[var(--ss-ocean-800)]">
+                  <UIcon name="i-lucide-log-out" class="size-4 shrink-0 text-[var(--ss-ocean-400)]" />
+                  {{ t('Suites.checkOutRule') }}
+                </div>
+                <div class="flex items-center gap-3 rounded-xl border border-[var(--ss-ocean-100)] px-4 py-3 text-sm text-[var(--ss-ocean-800)]">
+                  <UIcon name="i-lucide-users" class="size-4 shrink-0 text-[var(--ss-ocean-400)]" />
+                  {{ t('Suites.maxGuestsRule', { n: suite.maxGuests }) }}
+                </div>
+                <div class="flex items-center gap-3 rounded-xl border border-[var(--ss-ocean-100)] px-4 py-3 text-sm text-[var(--ss-ocean-800)]">
+                  <UIcon name="i-lucide-calendar-days" class="size-4 shrink-0 text-[var(--ss-ocean-400)]" />
+                  {{ t('Suites.longStaysRule') }}
+                </div>
+              </div>
+              <p class="mt-4 text-xs text-[var(--ss-ocean-600)]">
+                {{ t('Suites.cancellationNote') }}
+              </p>
+            </div>
           </div>
 
           <!-- Booking sidebar -->

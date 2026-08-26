@@ -35,6 +35,12 @@
 - **Contact:** seahorsesuites@gmail.com · 573 529 1529. No social media accounts.
 - **Suites (real, 5):** Seahorse Retreat (2BR/1BA, 850 sqft, pet-friendly) · Sunset Haven (1BR + twin bunk/1BA, 850 sqft) · Coastal Bliss (2BR/1BA, 900 sqft, pet-friendly) · Ocean Breeze (2BR/1BA, 950 sqft, family/backyard) · Beachside Escape (2BR/2BA, 1,000 sqft, largest). No public nightly rates — never invent prices.
 - **Amenities (real, 7):** high-speed WiFi, laundry facilities, beach essentials (towels/chairs/umbrellas), pet-friendly (fee applies), shared patios + fire pit, fully equipped kitchens, free on-site parking (rear of building).
+- **In-suite details:** AC, heating, TV, Keurig coffee maker, microwave, stainless-steel oven, electric stove, toaster, refrigerator, dishes/silverware/wine glasses, cooking basics, bed linens, iron, hair dryer, shampoo/conditioner/body soap/shower gel, dedicated workspace, clothing storage, hangers.
+- **Outdoor/shared:** BBQ grill, outdoor dining area, backyard, fire pit, shared patio/balcony.
+- **Safety:** smoke alarm, CO alarm, fire extinguisher, first aid kit, exterior security camera.
+- **House rules:** check-in after 3 PM, checkout before 11 AM, long stays welcome (28+ days). Checkout: gather towels, throw trash away, turn things off.
+- **Cancellation:** short stays (<28 nights) = "Limited" (full refund 14+ days before, partial 7–14 days); long stays (28+) = Firm.
+- **Neighborhood:** East End of Sanibel, 3-min walk to beach, <5-min walk to Sanibel Lighthouse, directly across from Wickie's/ice cream/retail (Tuttles, EmOcean), 5-min drive to Causeway.
 - **Nearby:** Sanibel Lighthouse & fishing pier, J.N. "Ding" Darling National Wildlife Refuge, world-famous shelling beaches ("Sanibel Stoop"), Magic Bus on Sanibel (ice cream/candy/coffee), Wickies Lighthouse Restaurant, EmOcean (beachwear/souvenirs).
 - **Bookings:** Airbnb host profile lists all properties (https://www.airbnb.com/users/profile/1529338761913645803); Vrbo needs one direct URL per suite. Both live in `www/app/app.config.ts` → `booking`.
 

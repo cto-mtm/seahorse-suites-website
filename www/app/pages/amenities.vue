@@ -19,6 +19,17 @@ const gallery = computed(() =>
     alt: t(`Amenities.galleryAlt${i + 1}`)
   }))
 )
+
+/** Detailed in-suite amenities grouped by category */
+const detailCategories = computed(() => [
+  { heading: t('Amenities.detailKitchenHeading'), icon: 'i-lucide-utensils', items: t('Amenities.detailKitchenItems').split(' · ') },
+  { heading: t('Amenities.detailBathroomHeading'), icon: 'i-lucide-bath', items: t('Amenities.detailBathroomItems').split(' · ') },
+  { heading: t('Amenities.detailBedroomHeading'), icon: 'i-lucide-bed-double', items: t('Amenities.detailBedroomItems').split(' · ') },
+  { heading: t('Amenities.detailOutdoorHeading'), icon: 'i-lucide-trees', items: t('Amenities.detailOutdoorItems').split(' · ') },
+  { heading: t('Amenities.detailSafetyHeading'), icon: 'i-lucide-shield', items: t('Amenities.detailSafetyItems').split(' · ') }
+])
+
+const checkoutSteps = computed(() => t('Amenities.checkoutInstructions').split(' · '))
 </script>
 
 <template>
@@ -75,6 +86,98 @@ const gallery = computed(() =>
               loading="lazy"
               class="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed in-suite amenities -->
+    <section class="bg-fade-sand py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5 md:px-8">
+        <div class="text-center">
+          <p class="reveal eyebrow">{{ t('Amenities.detailEyebrow') }}</p>
+          <h2 class="reveal reveal-delay-1 mt-4 font-display text-3xl md:text-4xl">{{ t('Amenities.detailTitle') }}</h2>
+        </div>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div v-for="cat in detailCategories" :key="cat.heading" class="reveal rounded-2xl border border-[var(--ss-ocean-100)] bg-white p-6">
+            <div class="flex items-center gap-3">
+              <UIcon :name="cat.icon" class="size-5 text-[var(--ss-ocean-500)]" />
+              <h3 class="font-display text-lg">{{ cat.heading }}</h3>
+            </div>
+            <ul class="mt-4 space-y-2">
+              <li v-for="item in cat.items" :key="item" class="flex items-start gap-2 text-sm text-[var(--ss-ocean-800)]">
+                <UIcon name="i-lucide-check" class="mt-0.5 size-3.5 shrink-0 text-[var(--ss-ocean-400)]" />
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- House rules, cancellation & neighborhood -->
+    <section class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5 md:px-8">
+        <div class="text-center">
+          <p class="reveal eyebrow">{{ t('Amenities.houseRulesEyebrow') }}</p>
+          <h2 class="reveal reveal-delay-1 mt-4 font-display text-3xl md:text-4xl">{{ t('Amenities.houseRulesTitle') }}</h2>
+        </div>
+        <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Check-in / Check-out -->
+          <div class="reveal rounded-2xl border border-[var(--ss-ocean-100)] p-6">
+            <div class="flex items-center gap-3">
+              <UIcon name="i-lucide-clock" class="size-5 text-[var(--ss-ocean-500)]" />
+              <h3 class="font-display text-lg">Check-in / Check-out</h3>
+            </div>
+            <ul class="mt-4 space-y-2.5 text-sm text-[var(--ss-ocean-800)]">
+              <li class="flex items-center gap-2">
+                <UIcon name="i-lucide-log-in" class="size-4 text-[var(--ss-ocean-400)]" />
+                {{ t('Amenities.checkIn') }}
+              </li>
+              <li class="flex items-center gap-2">
+                <UIcon name="i-lucide-log-out" class="size-4 text-[var(--ss-ocean-400)]" />
+                {{ t('Amenities.checkOut') }}
+              </li>
+              <li class="flex items-center gap-2">
+                <UIcon name="i-lucide-calendar-days" class="size-4 text-[var(--ss-ocean-400)]" />
+                {{ t('Amenities.longStays') }}
+              </li>
+            </ul>
+          </div>
+
+          <!-- Checkout instructions -->
+          <div class="reveal reveal-delay-1 rounded-2xl border border-[var(--ss-ocean-100)] p-6">
+            <div class="flex items-center gap-3">
+              <UIcon name="i-lucide-clipboard-check" class="size-5 text-[var(--ss-ocean-500)]" />
+              <h3 class="font-display text-lg">{{ t('Amenities.checkoutInstructionsHeading') }}</h3>
+            </div>
+            <ul class="mt-4 space-y-2.5 text-sm text-[var(--ss-ocean-800)]">
+              <li v-for="step in checkoutSteps" :key="step" class="flex items-center gap-2">
+                <UIcon name="i-lucide-check" class="size-4 text-[var(--ss-ocean-400)]" />
+                {{ step }}
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cancellation -->
+          <div class="reveal reveal-delay-2 rounded-2xl border border-[var(--ss-ocean-100)] p-6">
+            <div class="flex items-center gap-3">
+              <UIcon name="i-lucide-shield-check" class="size-5 text-[var(--ss-ocean-500)]" />
+              <h3 class="font-display text-lg">{{ t('Amenities.cancellationHeading') }}</h3>
+            </div>
+            <div class="mt-4 space-y-3 text-sm text-[var(--ss-ocean-800)]">
+              <p>{{ t('Amenities.cancellationShortTerm') }}</p>
+              <p>{{ t('Amenities.cancellationLongTerm') }}</p>
+            </div>
+          </div>
+
+          <!-- Neighborhood -->
+          <div class="reveal rounded-2xl border border-[var(--ss-ocean-100)] p-6 md:col-span-2 lg:col-span-3">
+            <div class="flex items-center gap-3">
+              <UIcon name="i-lucide-map-pin" class="size-5 text-[var(--ss-ocean-500)]" />
+              <h3 class="font-display text-lg">{{ t('Amenities.neighborhoodHeading') }}</h3>
+            </div>
+            <p class="mt-4 leading-relaxed text-sm text-[var(--ss-ocean-800)]">{{ t('Amenities.neighborhoodBody') }}</p>
           </div>
         </div>
       </div>
