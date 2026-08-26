@@ -16,19 +16,19 @@ export default defineAppConfig({
     // Individual listing URLs per suite (keys = suite slugs), used on the
     // suite detail pages. REPLACE_ME with the real listing URLs.
     airbnb: {
-      'seahorse-retreat': 'https://www.airbnb.com/rooms/REPLACE_ME_SEAHORSE_RETREAT',
-      'sunset-haven': 'https://www.airbnb.com/rooms/REPLACE_ME_SUNSET_HAVEN',
-      'coastal-bliss': 'https://www.airbnb.com/rooms/REPLACE_ME_COASTAL_BLISS',
-      'ocean-breeze': 'https://www.airbnb.com/rooms/REPLACE_ME_OCEAN_BREEZE',
-      'beachside-escape': 'https://www.airbnb.com/rooms/REPLACE_ME_BEACHSIDE_ESCAPE'
+      'seahorse-retreat': 'https://www.airbnb.com/rooms/1441180543462756486',
+      'sunset-haven': 'https://www.airbnb.com/rooms/1247829517412810829',
+      'coastal-bliss': 'https://www.airbnb.com/rooms/1247797360491215033',
+      'ocean-breeze': 'https://www.airbnb.com/rooms/1247748784270445888',
+      'beachside-escape': ''
     },
     // Vrbo has no host-profile page, so each suite links directly.
     vrbo: {
-      'seahorse-retreat': 'https://www.vrbo.com/REPLACE_ME_SEAHORSE_RETREAT',
-      'sunset-haven': 'https://www.vrbo.com/REPLACE_ME_SUNSET_HAVEN',
-      'coastal-bliss': 'https://www.vrbo.com/REPLACE_ME_COASTAL_BLISS',
-      'ocean-breeze': 'https://www.vrbo.com/REPLACE_ME_OCEAN_BREEZE',
-      'beachside-escape': 'https://www.vrbo.com/REPLACE_ME_BEACHSIDE_ESCAPE'
+      'seahorse-retreat': 'https://www.vrbo.com/4361518',
+      'sunset-haven': 'https://www.vrbo.com/4361506',
+      'coastal-bliss': 'https://www.vrbo.com/4363082',
+      'ocean-breeze': 'https://www.vrbo.com/4363107',
+      'beachside-escape': 'https://www.vrbo.com/4363125'
     }
   },
   ui: {

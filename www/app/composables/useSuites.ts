@@ -18,6 +18,10 @@ export interface Suite {
    * real max occupancy per suite and update. Not shown as marketing copy.
    */
   maxGuests: number
+  /** Physical unit number on the building (1–5) */
+  unitNumber: number
+  /** Floor level (1 = ground, 2 = second) */
+  floor: number
 }
 
 const SHARED_AMENITIES = ['wifi', 'laundry', 'beach', 'patio', 'kitchen', 'parking']
@@ -35,13 +39,15 @@ export function useSuites() {
   const { t } = useI18n()
 
   return computed<Suite[]>(() =>
-    defs.map(({ n, slug, icon, amenityKeys, bedrooms, maxGuests }) => ({
+    defs.map(({ n, slug, icon, amenityKeys, bedrooms, maxGuests, floor }) => ({
       slug,
       icon,
       amenityKeys: [...amenityKeys],
       bedrooms,
       maxGuests,
       petFriendly: amenityKeys.includes('pets'),
+      unitNumber: n,
+      floor,
       title: t(`Suites.suite${n}Title`),
       specs: t(`Suites.suite${n}Specs`),
       desc: t(`Suites.suite${n}Desc`),

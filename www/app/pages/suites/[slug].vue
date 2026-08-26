@@ -45,14 +45,14 @@ const bookingLinks = computed(() => {
     {
       name: 'Airbnb',
       label: t('Suites.bookAirbnb'),
-      url: (appConfig.booking.airbnb as Record<string, string>)[slug] ?? appConfig.booking.airbnbUrl,
+      url: (appConfig.booking.airbnb as Record<string, string>)[slug] || appConfig.booking.airbnbUrl,
       icon: 'i-lucide-house',
       accent: '#FF5A5F'
     },
     {
       name: 'Vrbo',
       label: t('Suites.bookVrbo'),
-      url: (appConfig.booking.vrbo as Record<string, string>)[slug] ?? '#',
+      url: (appConfig.booking.vrbo as Record<string, string>)[slug] || '#',
       icon: 'i-lucide-umbrella',
       accent: '#245ABC'
     }
@@ -81,7 +81,10 @@ useSeoMeta({
         {{ suite.title }}
       </h1>
       <p class="animate-fade-up mt-4 text-sm font-semibold tracking-brand-wide uppercase text-[var(--ss-ocean-300)]" style="animation-delay: 0.25s">
-        {{ suite.specs }}
+        <span class="inline-flex items-center gap-1.5">
+          <span class="rounded-full border border-[var(--ss-ocean-400)]/50 px-2 py-0.5 text-xs">Unit {{ suite.unitNumber }}</span>
+          {{ suite.specs }}
+        </span>
       </p>
       <p class="animate-fade-up mx-auto mt-4 max-w-2xl text-[var(--ss-ocean-100)]" style="animation-delay: 0.35s">
         {{ suite.desc }}
