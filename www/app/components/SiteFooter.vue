@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
-const { submitForm } = useSubmitForm()
-const recaptcha = useRecaptcha()
 
 const quickLinks = computed(() => [
   { label: t('AppHeader.suites'), to: localePath('suites') },
@@ -10,19 +8,6 @@ const quickLinks = computed(() => [
   { label: t('AppHeader.attractions'), to: localePath('explore') },
   { label: t('AppHeader.contact'), to: localePath('contact') }
 ])
-
-const email = ref('')
-const state = ref<'idle' | 'sending' | 'success' | 'error'>('idle')
-
-async function subscribe() {
-  if (!email.value || state.value === 'sending') return
-  state.value = 'sending'
-  const token = await recaptcha.execute('newsletter')
-  const result = await submitForm('newsletter', { email: email.value }, token)
-  state.value = result.success ? 'success' : 'error'
-  if (result.success) email.value = ''
-}
-
 </script>
 
 <template>
@@ -31,7 +16,7 @@ async function subscribe() {
     <WaveDivider class="absolute -top-16 md:-top-24 left-0 text-[var(--ss-ocean-950)]" />
 
     <div class="mx-auto max-w-7xl px-5 pb-10 pt-16 md:px-8">
-      <div class="grid gap-12 md:grid-cols-3">
+      <div class="grid gap-12 md:grid-cols-2">
         <!-- Brand -->
         <div>
           <div class="flex items-center gap-3">
@@ -78,45 +63,6 @@ async function subscribe() {
               <a href="mailto:seahorsesuites@gmail.com" class="transition-colors hover:text-[var(--ss-ocean-300)]">{{ t('AppFooter.email') }}</a>
             </li>
           </ul>
-        </div>
-
-        <!-- Newsletter -->
-        <div>
-          <p class="eyebrow !text-[var(--ss-ocean-300)]">{{ t('AppFooter.newsletterTitle') }}</p>
-          <p class="mt-4 text-sm text-[var(--ss-ocean-100)]">{{ t('AppFooter.newsletterSubtitle') }}</p>
-
-          <form class="mt-5" aria-label="Newsletter" @submit.prevent="subscribe">
-            <label for="newsletter-email" class="sr-only">{{ t('AppFooter.newsletterPlaceholder') }}</label>
-            <div class="flex overflow-hidden rounded-full border border-[var(--ss-ocean-700)] focus-within:border-[var(--ss-ocean-400)]">
-              <input
-                id="newsletter-email"
-                v-model="email"
-                type="email"
-                name="email"
-                required
-                autocomplete="email"
-                :placeholder="t('AppFooter.newsletterPlaceholder')"
-                aria-describedby="newsletter-status"
-                class="w-full bg-transparent px-5 py-3 text-sm text-white placeholder:text-[var(--ss-ocean-400)] focus:outline-none"
-              >
-              <button
-                type="submit"
-                :disabled="state === 'sending'"
-                class="group relative shrink-0 overflow-hidden bg-[var(--ss-ocean-400)] px-6 text-sm font-bold tracking-brand uppercase text-[var(--ss-ocean-950)] transition-all duration-500 hover:bg-[var(--ss-ocean-300)] disabled:opacity-60"
-              >
-                {{ t('AppFooter.newsletterButton') }}
-              </button>
-            </div>
-            <p
-              id="newsletter-status"
-              aria-live="polite"
-              class="mt-3 min-h-5 text-sm"
-              :class="state === 'error' ? 'text-red-300' : 'text-[var(--ss-ocean-300)]'"
-            >
-              <template v-if="state === 'success'">{{ t('AppFooter.newsletterSuccess') }}</template>
-              <template v-else-if="state === 'error'">{{ t('AppFooter.newsletterError') }}</template>
-            </p>
-          </form>
         </div>
       </div>
 

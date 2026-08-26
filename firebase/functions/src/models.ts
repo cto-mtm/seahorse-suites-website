@@ -23,16 +23,6 @@ const formConfigs: Record<string, FormConfig> = {
     subject: "New Contact Form Submission",
     confirmationSubject: "We received your message — Seahorse Suites",
   },
-  "newsletter": {
-    schema: z.object({
-      email: z.string().email(),
-    }),
-    requiredFields: ["email"],
-    optionalFields: [],
-    notifyEmail: "seahorsesuites@gmail.com",
-    subject: "New Newsletter Signup",
-    confirmationSubject: "Welcome to the Seahorse Suites newsletter",
-  },
   "request-booking": {
     schema: z.object({
       name: z.string().min(1),

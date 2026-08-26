@@ -51,7 +51,7 @@ We rebuilt the site from scratch on a modern stack and you can click through it 
 ### 2.4 Backend & Infrastructure
 
 - **The Reality:** WordPress + Elementor + plugins on traditional hosting — a database-driven system that must be patched, updated, and secured indefinitely, with a plugin dependency chain that can break on any update.
-- **The New Build:** A **static, pre-rendered site** (Nuxt 4) served from Firebase's global CDN. There is no database to hack, no plugins to renew, no WordPress admin to secure. Contact and newsletter forms run on a serverless Cloud Function with input validation, reCAPTCHA v3 spam protection, an email notification to you, and an automatic branded confirmation to the guest. Legacy URLs from the current site will be 301-redirected so no search equity is lost.
+- **The New Build:** A **static, pre-rendered site** (Nuxt 4) served from Firebase's global CDN. There is no database to hack, no plugins to renew, no WordPress admin to secure. Contact and direct reservation-request forms run on a serverless Cloud Function with input validation, reCAPTCHA v3 spam protection, an email notification to you, and an automatic branded confirmation to the guest. Legacy URLs from the current site will be 301-redirected so no search equity is lost.
 
 ### 2.5 Performance & SEO
 
