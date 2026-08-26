@@ -25,6 +25,11 @@ const galleryTiles = computed(() =>
   (suitePhotos.value?.photos ?? []).filter(p => p.src !== suitePhotos.value?.hero.src).slice(0, 4)
 )
 
+/** All photos for the gallery modal */
+const allPhotos = computed(() => suitePhotos.value?.photos ?? [])
+
+const galleryOpen = ref(false)
+
 /** This suite's amenities, drawn from the shared amenity catalogue */
 const suiteAmenities = computed(() =>
   allAmenities.value.filter(a => suite.value?.amenityKeys.includes(a.key))
@@ -106,6 +111,16 @@ useSeoMeta({
               class="h-full w-full object-cover"
             />
           </div>
+        </div>
+        <div class="mt-4 text-center">
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 rounded-full border border-[var(--ss-ocean-200)] px-5 py-2.5 text-sm font-semibold tracking-brand text-[var(--ss-ocean-700)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
+            @click="galleryOpen = true"
+          >
+            <UIcon name="i-lucide-images" class="size-4" />
+            {{ t('Suites.seeAllPhotos', { n: allPhotos.length }) }}
+          </button>
         </div>
 
         <div class="mt-14 grid gap-12 lg:grid-cols-[1fr_minmax(18rem,22rem)]">
@@ -280,5 +295,13 @@ useSeoMeta({
         </div>
       </div>
     </section>
+
+    <!-- Photo gallery modal -->
+    <PhotoGalleryModal
+      :photos="allPhotos"
+      :title="suite.title"
+      :open="galleryOpen"
+      @close="galleryOpen = false"
+    />
   </div>
 </template>

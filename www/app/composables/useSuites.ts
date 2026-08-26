@@ -23,11 +23,11 @@ export interface Suite {
 const SHARED_AMENITIES = ['wifi', 'laundry', 'beach', 'patio', 'kitchen', 'parking']
 
 const defs = [
-  { n: 1, slug: 'seahorse-retreat', icon: 'i-lucide-shell', amenityKeys: [...SHARED_AMENITIES, 'pets'], bedrooms: 2, maxGuests: 6 },
-  { n: 2, slug: 'sunset-haven', icon: 'i-lucide-sunset', amenityKeys: SHARED_AMENITIES, bedrooms: 1, maxGuests: 4 },
-  { n: 3, slug: 'coastal-bliss', icon: 'i-lucide-waves', amenityKeys: [...SHARED_AMENITIES, 'pets'], bedrooms: 2, maxGuests: 6 },
-  { n: 4, slug: 'ocean-breeze', icon: 'i-lucide-flame', amenityKeys: SHARED_AMENITIES, bedrooms: 2, maxGuests: 6 },
-  { n: 5, slug: 'beachside-escape', icon: 'i-lucide-umbrella', amenityKeys: SHARED_AMENITIES, bedrooms: 2, maxGuests: 6 }
+  { n: 1, slug: 'seahorse-retreat', icon: 'i-lucide-shell', amenityKeys: [...SHARED_AMENITIES, 'pets'], bedrooms: 2, maxGuests: 6, floor: 2 },
+  { n: 2, slug: 'sunset-haven', icon: 'i-lucide-sunset', amenityKeys: SHARED_AMENITIES, bedrooms: 1, maxGuests: 4, floor: 2 },
+  { n: 3, slug: 'coastal-bliss', icon: 'i-lucide-waves', amenityKeys: [...SHARED_AMENITIES, 'pets'], bedrooms: 2, maxGuests: 6, floor: 2 },
+  { n: 4, slug: 'ocean-breeze', icon: 'i-lucide-flame', amenityKeys: SHARED_AMENITIES, bedrooms: 2, maxGuests: 6, floor: 2 },
+  { n: 5, slug: 'beachside-escape', icon: 'i-lucide-umbrella', amenityKeys: SHARED_AMENITIES, bedrooms: 2, maxGuests: 6, floor: 1 }
 ] as const
 
 /** Shared suite data (homepage teaser + /suites pages + booking modal). Copy lives in i18n `Suites.*`. */
@@ -46,7 +46,7 @@ export function useSuites() {
       specs: t(`Suites.suite${n}Specs`),
       desc: t(`Suites.suite${n}Desc`),
       long: t(`Suites.suite${n}Long`),
-      features: [1, 2, 3, 4].map(m => t(`Suites.suite${n}Feat${m}`))
+      features: [1, 2, 3, 4, 5].map(m => t(`Suites.suite${n}Feat${m}`))
     }))
   )
 }

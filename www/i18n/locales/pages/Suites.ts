@@ -30,6 +30,7 @@ export default {
     "maxGuestsRule": "{n} guests maximum",
     "longStaysRule": "Long stays welcome (28+ days)",
     "cancellationNote": "Cancellation: full refund at least 14 days before check-in; partial refund 7–14 days before. Long stays (28+ nights) follow a firm policy.",
+    "seeAllPhotos": "See all {n} photos",
 
     "suite1Title": "Seahorse Retreat",
     "suite1Specs": "2 Bedrooms · 1 Bath · 850 sq ft",
@@ -39,6 +40,7 @@ export default {
     "suite1Feat2": "Steps from the beach",
     "suite1Feat3": "Pet-friendly (fee applies)",
     "suite1Feat4": "Cafés, shops & restaurants nearby",
+    "suite1Feat5": "Second floor with shared balcony (stairs only)",
 
     "suite2Title": "Sunset Haven",
     "suite2Specs": "1 Bedroom + twin bunk · 1 Bath · 850 sq ft",
@@ -48,6 +50,7 @@ export default {
     "suite2Feat2": "Bedroom + twin bunk for the kids",
     "suite2Feat3": "Steps from the beach",
     "suite2Feat4": "Ice cream & shops across the street",
+    "suite2Feat5": "Second floor with shared balcony (stairs only)",
 
     "suite3Title": "Coastal Bliss",
     "suite3Specs": "2 Bedrooms · 1 Bath · 900 sq ft",
@@ -57,6 +60,7 @@ export default {
     "suite3Feat2": "Steps from the beach",
     "suite3Feat3": "Pet-friendly (fee applies)",
     "suite3Feat4": "Shops & cafés across the street",
+    "suite3Feat5": "Second floor with shared balcony (stairs only)",
 
     "suite4Title": "Ocean Breeze",
     "suite4Specs": "2 Bedrooms · 1 Bath · 950 sq ft",
@@ -66,6 +70,7 @@ export default {
     "suite4Feat2": "Shared backyard with grill & fire pit",
     "suite4Feat3": "Hammock + outdoor games",
     "suite4Feat4": "Steps from the beach",
+    "suite4Feat5": "Second floor with private wrap-around balcony (stairs only)",
 
     "suite5Title": "Beachside Escape",
     "suite5Specs": "2 Bedrooms · 2 Baths · 1,000 sq ft",
@@ -74,7 +79,8 @@ export default {
     "suite5Feat1": "Largest suite — 1,000 sq ft",
     "suite5Feat2": "Two full bathrooms",
     "suite5Feat3": "Newly renovated throughout",
-    "suite5Feat4": "One block from the beach"
+    "suite5Feat4": "One block from the beach",
+    "suite5Feat5": "Ground floor — no stairs"
   },
   es: {
     "metaTitle": "Nuestras 5 Suites — Recién renovadas, a pasos de la playa",
@@ -107,6 +113,7 @@ export default {
     "maxGuestsRule": "{n} huéspedes máximo",
     "longStaysRule": "Estancias largas bienvenidas (28+ días)",
     "cancellationNote": "Cancelación: reembolso total al menos 14 días antes de la entrada; reembolso parcial entre 7 y 14 días antes. Estancias largas (28+ noches) siguen una política firme.",
+    "seeAllPhotos": "Ver las {n} fotos",
 
     "suite1Title": "Seahorse Retreat",
     "suite1Specs": "2 habitaciones · 1 baño · 79 m²",
@@ -116,6 +123,7 @@ export default {
     "suite1Feat2": "A pasos de la playa",
     "suite1Feat3": "Admite mascotas (aplica tarifa)",
     "suite1Feat4": "Cafés, tiendas y restaurantes cerca",
+    "suite1Feat5": "Segunda planta con balcón compartido (solo escaleras)",
 
     "suite2Title": "Sunset Haven",
     "suite2Specs": "1 habitación + litera doble · 1 baño · 79 m²",
@@ -125,6 +133,7 @@ export default {
     "suite2Feat2": "Habitación + litera para los niños",
     "suite2Feat3": "A pasos de la playa",
     "suite2Feat4": "Heladería y tiendas enfrente",
+    "suite2Feat5": "Segunda planta con balcón compartido (solo escaleras)",
 
     "suite3Title": "Coastal Bliss",
     "suite3Specs": "2 habitaciones · 1 baño · 84 m²",
@@ -134,6 +143,7 @@ export default {
     "suite3Feat2": "A pasos de la playa",
     "suite3Feat3": "Admite mascotas (aplica tarifa)",
     "suite3Feat4": "Tiendas y cafés enfrente",
+    "suite3Feat5": "Segunda planta con balcón compartido (solo escaleras)",
 
     "suite4Title": "Ocean Breeze",
     "suite4Specs": "2 habitaciones · 1 baño · 88 m²",
@@ -143,6 +153,7 @@ export default {
     "suite4Feat2": "Patio compartido con parrilla y fogata",
     "suite4Feat3": "Hamaca + juegos al aire libre",
     "suite4Feat4": "A pasos de la playa",
+    "suite4Feat5": "Segunda planta con balcón privado envolvente (solo escaleras)",
 
     "suite5Title": "Beachside Escape",
     "suite5Specs": "2 habitaciones · 2 baños · 93 m²",
@@ -151,6 +162,7 @@ export default {
     "suite5Feat1": "La suite más grande — 93 m²",
     "suite5Feat2": "Dos baños completos",
     "suite5Feat3": "Recién renovada por completo",
-    "suite5Feat4": "A una calle de la playa"
+    "suite5Feat4": "A una calle de la playa",
+    "suite5Feat5": "Planta baja — sin escaleras"
   }
 }
