@@ -41,9 +41,28 @@ const quickLinks = computed(() => [
           </nav>
         </div>
 
-        <!-- Contact placeholders -->
+        <!-- Contact -->
         <div>
           <p class="eyebrow !text-[var(--ss-ocean-300)]">{{ t('AppFooter.contactTitle') }}</p>
+
+          <!-- Map -->
+          <a
+            href="https://maps.google.com/?q=1167+Buttonwood+Lane,+Sanibel,+FL+33957"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group mt-4 block overflow-hidden rounded-2xl border border-[var(--ss-ocean-800)] shadow-coastal"
+            :aria-label="t('AppFooter.mapLabel')"
+          >
+            <iframe
+              title="Seahorse Suites location map"
+              src="https://www.google.com/maps?q=1167+Buttonwood+Lane,+Sanibel,+FL+33957&output=embed"
+              class="h-44 w-full border-0 grayscale transition-all duration-500 group-hover:grayscale-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              tabindex="-1"
+            />
+          </a>
+
           <ul class="mt-4 space-y-3 text-sm text-[var(--ss-ocean-100)]">
             <li class="flex items-start gap-3">
               <UIcon name="i-lucide-map-pin" class="mt-0.5 size-4 shrink-0 text-[var(--ss-ocean-400)]" />
