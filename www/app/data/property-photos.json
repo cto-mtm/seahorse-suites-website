@@ -935,14 +935,45 @@
         }
       ]
     },
-    "magic-bus": null,
+    "magic-bus": {
+      "hero": {
+        "src": "/images/explore/magic-bus/bus-mural.webp",
+        "thumb": "/images/explore/magic-bus/bus-mural-thumb.webp"
+      },
+      "gallery": [
+        {
+          "src": "/images/explore/magic-bus/counter.webp",
+          "thumb": "/images/explore/magic-bus/counter-thumb.webp"
+        }
+      ]
+    },
     "wickies": {
       "hero": {
-        "src": "/images/property/exterior/51.webp",
-        "thumb": "/images/property/exterior/51-thumb.webp"
+        "src": "/images/explore/wickies/storefront.webp",
+        "thumb": "/images/explore/wickies/storefront-thumb.webp"
       },
-      "gallery": []
+      "gallery": [
+        {
+          "src": "/images/explore/wickies/interior.webp",
+          "thumb": "/images/explore/wickies/interior-thumb.webp"
+        },
+        {
+          "src": "/images/explore/wickies/exterior.webp",
+          "thumb": "/images/explore/wickies/exterior-thumb.webp"
+        }
+      ]
     },
-    "emocean": null
+    "emocean": {
+      "hero": {
+        "src": "/images/explore/emocean/storefront.webp",
+        "thumb": "/images/explore/emocean/storefront-thumb.webp"
+      },
+      "gallery": [
+        {
+          "src": "/images/explore/emocean/interior.webp",
+          "thumb": "/images/explore/emocean/interior-thumb.webp"
+        }
+      ]
+    }
   }
 }

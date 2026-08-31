@@ -92,9 +92,12 @@ const EXPLORE = {
   'lighthouse': { hero: 10, gallery: [9, 29] }, // aerial tower · lighthouse point · sunset silhouette
   'ding-darling': { hero: 'spoonbills', gallery: ['mangroves', 'pelicans'] },
   'shelling': { hero: 13, gallery: [22, 15] }, // shore aerial · gulf beach · beach access path
-  'magic-bus': null,
-  'wickies': { hero: 51, gallery: [] }, // their A-frame from the street
-  'emocean': null
+  // magic-bus / wickies / emocean: string refs resolve from photos/explore/<slug>/<name>.jpg.
+  // These were also optimized in place and written straight into the manifest;
+  // to regenerate from raws, drop the source JPGs in photos/explore/<slug>/ named to match.
+  'magic-bus': { hero: 'bus-mural', gallery: ['counter'] },
+  'wickies': { hero: 'storefront', gallery: ['interior', 'exterior'] },
+  'emocean': { hero: 'storefront', gallery: ['interior'] }
 }
 
 const photoNumber = f => {
