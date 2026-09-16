@@ -75,46 +75,8 @@ function openGallery(title: string, set: { src: string, thumb: string }[]) {
       </div>
     </section>
 
-    <!-- ═══ Building & Grounds ═══ -->
-    <section class="bg-white py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-5 md:px-8">
-        <div class="reveal">
-          <h2 class="font-display text-3xl md:text-4xl">{{ t('Photos.exteriorTitle') }}</h2>
-          <p class="mt-3 max-w-2xl text-[var(--ss-ocean-800)]">{{ t('Photos.exteriorSubtitle') }}</p>
-        </div>
-
-        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <button
-            v-for="(photo, i) in photos.property.exterior.slice(0, 6)"
-            :key="photo.src"
-            type="button"
-            class="reveal-scale group relative h-56 overflow-hidden rounded-2xl shadow-coastal"
-            :aria-label="t('Photos.photoAlt', { title: t('Photos.exteriorTitle'), n: i + 1 })"
-            @click="openGallery(t('Photos.exteriorTitle'), photos.property.exterior)"
-          >
-            <NuxtImg
-              :src="photo.thumb"
-              :alt="t('Photos.photoAlt', { title: t('Photos.exteriorTitle'), n: i + 1 })"
-              loading="lazy"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-          </button>
-        </div>
-
-        <div class="mt-8 text-center">
-          <button
-            type="button"
-            class="rounded-full border border-[var(--ss-ocean-300)] px-8 py-3 text-sm font-bold tracking-brand-wide uppercase text-[var(--ss-ocean-700)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
-            @click="openGallery(t('Photos.exteriorTitle'), photos.property.exterior)"
-          >
-            {{ t('Photos.viewAll', { n: photos.property.exterior.length }) }}
-          </button>
-        </div>
-      </div>
-    </section>
-
     <!-- ═══ Aerial ═══ -->
-    <section class="bg-[var(--ss-sand-100)] py-16 md:py-24">
+    <section class="bg-white py-16 md:py-24">
       <div class="mx-auto max-w-6xl px-5 md:px-8">
         <div class="reveal">
           <h2 class="font-display text-3xl md:text-4xl">{{ t('Photos.aerialTitle') }}</h2>
@@ -152,7 +114,7 @@ function openGallery(title: string, set: { src: string, thumb: string }[]) {
     </section>
 
     <!-- ═══ Inside the Suites ═══ -->
-    <section class="bg-white py-16 md:py-24">
+    <section class="bg-[var(--ss-sand-100)] py-16 md:py-24">
       <div class="mx-auto max-w-6xl px-5 md:px-8">
         <div class="reveal">
           <h2 class="font-display text-3xl md:text-4xl">{{ t('Photos.suitesTitle') }}</h2>
@@ -185,6 +147,44 @@ function openGallery(title: string, set: { src: string, thumb: string }[]) {
               </span>
             </div>
           </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Building & Grounds ═══ -->
+    <section class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-5 md:px-8">
+        <div class="reveal">
+          <h2 class="font-display text-3xl md:text-4xl">{{ t('Photos.exteriorTitle') }}</h2>
+          <p class="mt-3 max-w-2xl text-[var(--ss-ocean-800)]">{{ t('Photos.exteriorSubtitle') }}</p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <button
+            v-for="(photo, i) in photos.property.exterior.slice(0, 6)"
+            :key="photo.src"
+            type="button"
+            class="reveal-scale group relative h-56 overflow-hidden rounded-2xl shadow-coastal"
+            :aria-label="t('Photos.photoAlt', { title: t('Photos.exteriorTitle'), n: i + 1 })"
+            @click="openGallery(t('Photos.exteriorTitle'), photos.property.exterior)"
+          >
+            <NuxtImg
+              :src="photo.thumb"
+              :alt="t('Photos.photoAlt', { title: t('Photos.exteriorTitle'), n: i + 1 })"
+              loading="lazy"
+              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </button>
+        </div>
+
+        <div class="mt-8 text-center">
+          <button
+            type="button"
+            class="rounded-full border border-[var(--ss-ocean-300)] px-8 py-3 text-sm font-bold tracking-brand-wide uppercase text-[var(--ss-ocean-700)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
+            @click="openGallery(t('Photos.exteriorTitle'), photos.property.exterior)"
+          >
+            {{ t('Photos.viewAll', { n: photos.property.exterior.length }) }}
+          </button>
         </div>
       </div>
     </section>

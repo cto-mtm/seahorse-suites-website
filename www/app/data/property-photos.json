@@ -974,6 +974,22 @@
           "thumb": "/images/explore/emocean/interior-thumb.webp"
         }
       ]
+    },
+    "bel-deli": {
+      "hero": {
+        "src": "/images/explore/bel-deli/storefront.webp",
+        "thumb": "/images/explore/bel-deli/storefront-thumb.webp"
+      },
+      "gallery": [
+        {
+          "src": "/images/explore/bel-deli/interior.webp",
+          "thumb": "/images/explore/bel-deli/interior-thumb.webp"
+        },
+        {
+          "src": "/images/explore/bel-deli/market.webp",
+          "thumb": "/images/explore/bel-deli/market-thumb.webp"
+        }
+      ]
     }
   }
 }

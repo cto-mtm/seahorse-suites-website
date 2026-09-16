@@ -37,10 +37,9 @@ export default defineAppConfig({
   // are intentionally blank so the site never links to an unverified page.
   explore: {
     websites: {
-      // EmOcean (Sporty Seahorse Shop, 362 Periwinkle Way) has no verified
-      // official website — only third-party directory listings — so it stays
-      // blank until the client confirms a real URL.
-      'emocean': '',
+      // EmOcean (Sporty Seahorse Shop, 362 Periwinkle Way) — official
+      // coastal wear store website confirmed by the client.
+      'emocean': 'https://emoceanscostalwear.com/',
       'wickies': 'https://wickieslighthouserestaurant.com',
       'magic-bus': 'https://themagicbussanibel.com',
       'bel-deli': 'https://www.thebelbagelsanddeli.com'
