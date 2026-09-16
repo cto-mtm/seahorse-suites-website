@@ -2,6 +2,7 @@
 const { t } = useI18n()
 const { submitForm } = useSubmitForm()
 const recaptcha = useRecaptcha()
+const appConfig = useAppConfig()
 
 useSeoMeta({
   title: () => t('Contact.metaTitle'),
@@ -52,6 +53,34 @@ async function onSubmit() {
       <p class="animate-fade-up mx-auto mt-5 max-w-xl text-[var(--ss-ocean-100)]" style="animation-delay: 0.3s">
         {{ t('Contact.subtitle') }}
       </p>
+
+      <!-- Direct contact details — the client asked these to appear here too, not just the footer -->
+      <div class="animate-fade-up mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8" style="animation-delay: 0.45s">
+        <a
+          :href="`tel:+${appConfig.contact.phoneE164}`"
+          class="group flex items-center gap-3 text-white transition-colors hover:text-[var(--ss-ocean-300)]"
+        >
+          <span class="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-[var(--ss-ocean-300)] transition-colors duration-300 group-hover:bg-white/20">
+            <UIcon name="i-lucide-phone" class="size-5" />
+          </span>
+          <span class="text-left">
+            <span class="block text-xs font-semibold tracking-brand uppercase text-[var(--ss-ocean-300)]">{{ t('Contact.callLabel') }}</span>
+            <span class="font-display text-lg tracking-brand">{{ appConfig.contact.phone }}</span>
+          </span>
+        </a>
+        <a
+          :href="`mailto:${appConfig.contact.email}`"
+          class="group flex items-center gap-3 text-white transition-colors hover:text-[var(--ss-ocean-300)]"
+        >
+          <span class="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-[var(--ss-ocean-300)] transition-colors duration-300 group-hover:bg-white/20">
+            <UIcon name="i-lucide-mail" class="size-5" />
+          </span>
+          <span class="text-left">
+            <span class="block text-xs font-semibold tracking-brand uppercase text-[var(--ss-ocean-300)]">{{ t('Contact.emailLabel2') }}</span>
+            <span class="font-display text-lg tracking-brand">{{ appConfig.contact.email }}</span>
+          </span>
+        </a>
+      </div>
     </section>
 
     <section class="bg-white py-16 md:py-24">

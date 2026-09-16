@@ -89,6 +89,22 @@ useSeoMeta({
                 <UIcon name="i-lucide-map-pin" class="mt-0.5 size-4 shrink-0 text-[var(--ss-ocean-400)]" />
                 {{ attraction.distance }}
               </p>
+
+              <!-- Official business website — opens in a new tab -->
+              <a
+                v-if="attraction.website"
+                :href="attraction.website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group mt-4 flex items-center gap-2.5 rounded-full border border-[var(--ss-ocean-200)] px-5 py-2.5 text-sm font-bold tracking-brand uppercase text-[var(--ss-ocean-700)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--ss-ocean-400)] hover:shadow-coastal"
+              >
+                <UIcon name="i-lucide-globe" class="size-4 shrink-0 text-[var(--ss-ocean-400)]" />
+                <span class="flex-1">{{ t('Explore.visitWebsite') }}</span>
+                <UIcon
+                  name="i-lucide-arrow-up-right"
+                  class="size-4 shrink-0 text-[var(--ss-ocean-300)] transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[var(--ss-ocean-500)]"
+                />
+              </a>
             </div>
 
             <div class="rounded-2xl bg-[var(--ss-sand-100)] p-6">

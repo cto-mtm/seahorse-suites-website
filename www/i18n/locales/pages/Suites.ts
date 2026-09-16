@@ -1,7 +1,8 @@
 export default {
   en: {
-    "metaTitle": "Our 5 Suites — Newly Renovated, Steps from the Beach",
-    "metaDescription": "Five newly renovated vacation suites in Old Town Sanibel, 850–1,000 sq ft, sleeping families and pets alike. Compare layouts and book direct on Airbnb or Vrbo.",
+    "metaTitle": "Our 5 Suites — Newly Renovated Sanibel Vacation Rentals",
+    "metaDescription": "Five newly renovated vacation rental suites in Old Town Sanibel Island, 850–1,000 sq ft, pet-friendly and family-friendly, steps from the beach. Compare layouts and book on Airbnb, Vrbo, or direct.",
+    "metaKeywords": "Sanibel Island vacation rental suites, pet friendly, 2 bedroom Sanibel rental, family beach rental, Old Town Sanibel condo, newly renovated, steps from the beach, Airbnb, Vrbo",
     "eyebrow": "Stay",
     "title": "Our Suites",
     "subtitle": "Five ways to wake up steps from the beach.",
@@ -83,8 +84,9 @@ export default {
     "suite5Feat5": "Ground floor — no stairs"
   },
   es: {
-    "metaTitle": "Nuestras 5 Suites — Recién renovadas, a pasos de la playa",
-    "metaDescription": "Cinco suites vacacionales recién renovadas en Old Town Sanibel, de 79 a 93 m², para familias y mascotas. Compara y reserva directo en Airbnb o Vrbo.",
+    "metaTitle": "Nuestras 5 Suites — Alquileres recién renovados en Sanibel",
+    "metaDescription": "Cinco suites de alquiler vacacional recién renovadas en Old Town Sanibel, de 79 a 93 m², que admiten mascotas y familias, a pasos de la playa. Compara y reserva en Airbnb, Vrbo o directo.",
+    "metaKeywords": "suites de alquiler vacacional Sanibel, admite mascotas, alquiler 2 habitaciones Sanibel, alquiler familiar de playa, condominio Old Town Sanibel, recién renovado, a pasos de la playa, Airbnb, Vrbo",
     "eyebrow": "Alójate",
     "title": "Nuestras Suites",
     "subtitle": "Cinco maneras de despertar a pasos de la playa.",

@@ -1,7 +1,8 @@
 export default {
   en: {
-    "metaTitle": "Beachfront Suites on Sanibel Island, Florida",
-    "metaDescription": "Pet-friendly vacation suites in Old Town Sanibel — steps from the Gulf, the historic lighthouse, and world-famous shelling beaches. Book on Airbnb or Vrbo.",
+    "metaTitle": "Sanibel Island Vacation Rentals — Pet-Friendly Beach Suites",
+    "metaDescription": "Pet-friendly vacation rentals in Old Town Sanibel Island, FL — newly renovated beach-house suites steps from the Gulf of Mexico, the historic lighthouse, and world-famous shelling beaches. Book on Airbnb, Vrbo, or direct.",
+    "metaKeywords": "Sanibel Island vacation rentals, Old Town Sanibel, pet friendly vacation rental, Sanibel beach house rental, Sanibel condo rental, Gulf of Mexico, shelling beaches, Sanibel lighthouse, family vacation rental Florida, monthly rental Sanibel, Seahorse Suites",
     "heroKicker": "Old Town Sanibel · Florida",
     "heroTitle": "Seahorse Suites",
     "heroSubtitle": "Steps from the Gulf. A world from everything else.",
@@ -22,8 +23,9 @@ export default {
     "ctaButton": "Book Now"
   },
   es: {
-    "metaTitle": "Suites frente al mar en la isla de Sanibel, Florida",
-    "metaDescription": "Suites vacacionales que admiten mascotas en Old Town Sanibel — a pasos del Golfo, del faro histórico y de las playas de conchas más famosas del mundo. Reserva en Airbnb o Vrbo.",
+    "metaTitle": "Alquileres vacacionales en Sanibel — Suites de playa que admiten mascotas",
+    "metaDescription": "Alquileres vacacionales que admiten mascotas en Old Town Sanibel, Florida — suites recién renovadas a pasos del Golfo de México, del faro histórico y de las playas de conchas más famosas del mundo. Reserva en Airbnb, Vrbo o directo.",
+    "metaKeywords": "alquileres vacacionales Sanibel, Old Town Sanibel, alquiler que admite mascotas, casa de playa Sanibel, condominio Sanibel, Golfo de México, playas de conchas, faro de Sanibel, alquiler familiar Florida, alquiler mensual Sanibel, Seahorse Suites",
     "heroKicker": "Old Town Sanibel · Florida",
     "heroTitle": "Seahorse Suites",
     "heroSubtitle": "A pasos del Golfo. A un mundo de todo lo demás.",

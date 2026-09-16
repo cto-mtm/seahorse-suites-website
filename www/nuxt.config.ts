@@ -62,7 +62,9 @@ export default defineNuxtConfig({
   site: {
     url: 'https://seahorsesuites.com',
     name: 'Seahorse Suites',
-    description: 'Your beachfront escape on Sanibel Island, FL. Pet-friendly suites in Old Town Sanibel — steps from the Gulf, the lighthouse, and world-famous shelling beaches.',
+    // Keyword-rich site description echoing the terms guests search on Airbnb
+    // and Vrbo (vacation rental, pet-friendly, Old Town Sanibel, Gulf, shelling).
+    description: 'Seahorse Suites — pet-friendly vacation rentals in Old Town Sanibel Island, Florida. Newly renovated beach-house suites steps from the Gulf of Mexico, the historic Sanibel Lighthouse, and world-famous shelling beaches. Book on Airbnb or Vrbo, or direct.',
     defaultLocale: 'en'
   },
 

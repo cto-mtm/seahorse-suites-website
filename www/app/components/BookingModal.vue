@@ -145,7 +145,28 @@ watch(isOpen, (open) => {
               />
             </button>
 
-            <p class="mt-6 text-center text-xs text-[var(--ss-ocean-600)]">
+            <!-- Direct contact details — shown on every Book Now entry point -->
+            <div class="mt-6 rounded-2xl border border-[var(--ss-ocean-100)] bg-[var(--ss-ocean-50)] p-5">
+              <p class="text-center text-xs font-bold tracking-brand uppercase text-[var(--ss-ocean-700)]">{{ t('BookingModal.directTitle') }}</p>
+              <div class="mt-3 flex flex-col gap-2.5 sm:flex-row sm:justify-center sm:gap-6">
+                <a
+                  :href="`tel:+${appConfig.contact.phoneE164}`"
+                  class="group flex items-center justify-center gap-2.5 text-sm font-semibold text-[var(--ss-ocean-800)] transition-colors hover:text-[var(--ss-ocean-500)]"
+                >
+                  <UIcon name="i-lucide-phone" class="size-4 shrink-0 text-[var(--ss-ocean-400)]" />
+                  {{ appConfig.contact.phone }}
+                </a>
+                <a
+                  :href="`mailto:${appConfig.contact.email}`"
+                  class="group flex items-center justify-center gap-2.5 text-sm font-semibold text-[var(--ss-ocean-800)] transition-colors hover:text-[var(--ss-ocean-500)]"
+                >
+                  <UIcon name="i-lucide-mail" class="size-4 shrink-0 text-[var(--ss-ocean-400)]" />
+                  {{ appConfig.contact.email }}
+                </a>
+              </div>
+            </div>
+
+            <p class="mt-5 text-center text-xs text-[var(--ss-ocean-600)]">
               {{ t('BookingModal.orContact') }}
               <NuxtLink
                 :to="localePath('contact')"

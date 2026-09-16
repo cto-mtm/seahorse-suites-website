@@ -4,6 +4,7 @@ const localePath = useLocalePath()
 
 const quickLinks = computed(() => [
   { label: t('AppHeader.suites'), to: localePath('suites') },
+  { label: t('AppHeader.photos'), to: localePath('photos') },
   { label: t('AppHeader.amenities'), to: localePath('amenities') },
   { label: t('AppHeader.attractions'), to: localePath('explore') },
   { label: t('AppHeader.contact'), to: localePath('contact') }

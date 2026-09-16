@@ -1,6 +1,7 @@
 export default {
   en: {
     "suites": "Suites",
+    "photos": "Photos",
     "amenities": "Amenities",
     "attractions": "Explore",
     "contact": "Contact",
@@ -9,6 +10,7 @@ export default {
   },
   es: {
     "suites": "Suites",
+    "photos": "Fotos",
     "amenities": "Servicios",
     "attractions": "Explora",
     "contact": "Contacto",

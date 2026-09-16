@@ -4,7 +4,8 @@ const localePath = useLocalePath()
 
 useSeoMeta({
   title: () => t('Index.metaTitle'),
-  description: () => t('Index.metaDescription')
+  description: () => t('Index.metaDescription'),
+  keywords: () => t('Index.metaKeywords')
 })
 
 useScrollReveal()
@@ -12,14 +13,10 @@ useScrollReveal()
 // Scroll-linked effects. The parallax offset is relative to the
 // attractions section's position in the viewport (NOT absolute page
 // scroll), so the background always stays within its overscan area.
-const watermarkY = ref(0)
 const parallaxY = ref(0)
 const attractionsSection = ref<HTMLElement | null>(null)
 
 function onScroll() {
-  // Gentle, clamped drift for the fixed seahorse watermark
-  watermarkY.value = Math.max(-100, Math.min(100, window.scrollY * -0.03))
-
   const el = attractionsSection.value
   if (el) {
     const rect = el.getBoundingClientRect()
@@ -44,14 +41,7 @@ const attractions = useAttractions()
 
 <template>
   <div class="relative overflow-x-clip">
-    <!-- ═══ Floating seahorse watermark (drifts gently + tracks scroll) ═══ -->
-    <div
-      class="pointer-events-none fixed right-[4%] top-1/3 z-0 hidden opacity-[0.07] lg:block"
-      :style="{ transform: `translateY(${watermarkY}px)` }"
-      aria-hidden="true"
-    >
-      <SeahorseMark variant="black" size="h-72" class="floaty" />
-    </div>
+    <!-- Global seahorse watermark now lives in the default layout (SeahorseWatermark) -->
 
     <!-- ═══ 1. HERO ═══ -->
     <section class="relative flex min-h-screen items-center justify-center ocean-bg text-white">

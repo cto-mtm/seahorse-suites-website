@@ -15,7 +15,10 @@ export default {
     "unitLabel": "Unit {n}",
     "close": "Close",
     "orContact": "Prefer to talk to us first?",
-    "contactLink": "Send us a message"
+    "contactLink": "Send us a message",
+    "directTitle": "Or reach us directly",
+    "callLabel": "Call or text",
+    "emailLabel": "Email"
   },
   es: {
     "title": "Reserva tu estancia",
@@ -33,6 +36,9 @@ export default {
     "unitLabel": "Unidad {n}",
     "close": "Cerrar",
     "orContact": "¿Prefieres hablar con nosotros primero?",
-    "contactLink": "Envíanos un mensaje"
+    "contactLink": "Envíanos un mensaje",
+    "directTitle": "O contáctanos directamente",
+    "callLabel": "Llama o escribe",
+    "emailLabel": "Correo"
   }
 }

@@ -3,7 +3,8 @@ const { t } = useI18n()
 
 useSeoMeta({
   title: () => t('Amenities.metaTitle'),
-  description: () => t('Amenities.metaDescription')
+  description: () => t('Amenities.metaDescription'),
+  keywords: () => t('Amenities.metaKeywords')
 })
 
 useScrollReveal()

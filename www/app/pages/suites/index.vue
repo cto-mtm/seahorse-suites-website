@@ -4,7 +4,8 @@ const localePath = useLocalePath()
 
 useSeoMeta({
   title: () => t('Suites.metaTitle'),
-  description: () => t('Suites.metaDescription')
+  description: () => t('Suites.metaDescription'),
+  keywords: () => t('Suites.metaKeywords')
 })
 
 useScrollReveal()

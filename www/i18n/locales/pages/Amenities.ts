@@ -2,6 +2,7 @@ export default {
   en: {
     "metaTitle": "Amenities — WiFi, Beach Gear, Pet-Friendly & More",
     "metaDescription": "Every Seahorse Suites stay includes high-speed WiFi, beach essentials, laundry, fully equipped kitchens, patios with a fire pit, and free parking.",
+    "metaKeywords": "Sanibel vacation rental amenities, pet friendly, high-speed WiFi, fully equipped kitchen, beach chairs and umbrellas, fire pit, free parking, laundry, Old Town Sanibel",
     "eyebrow": "Everything you need",
     "title": "Thoughtfully designed for your comfort",
     "pageTitle": "Amenities",
@@ -75,6 +76,7 @@ export default {
   es: {
     "metaTitle": "Servicios — WiFi, equipo de playa, admite mascotas y más",
     "metaDescription": "Toda estancia en Seahorse Suites incluye WiFi de alta velocidad, esenciales de playa, lavandería, cocinas equipadas, patios con fogata y parking gratuito.",
+    "metaKeywords": "servicios alquiler vacacional Sanibel, admite mascotas, WiFi de alta velocidad, cocina totalmente equipada, sillas y sombrillas de playa, fogata, parking gratuito, lavandería, Old Town Sanibel",
     "eyebrow": "Todo lo que necesitas",
     "title": "Diseñado con cuidado para tu confort",
     "pageTitle": "Servicios",

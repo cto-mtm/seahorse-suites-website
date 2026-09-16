@@ -3,11 +3,13 @@ export default {
     "backToAll": "Back to Explore",
     "highlightsTitle": "Don't miss",
     "gettingThere": "Getting there",
+    "visitWebsite": "Visit website",
     "ctaTitle": "Stay a stroll away from all of it.",
     "ctaButton": "Book Now",
 
     "metaTitle": "Explore Old Town Sanibel — Lighthouse, Shelling & Ding Darling",
     "metaDescription": "Everything a stroll or bike ride from Seahorse Suites: the Sanibel Lighthouse, world-famous shelling beaches, Ding Darling refuge, and the east end's favorite local stops.",
+    "metaKeywords": "things to do Old Town Sanibel, Sanibel Lighthouse, shelling beaches, Ding Darling Wildlife Refuge, EmOcean, Wickies restaurant, Magic Bus ice cream, Sanibel Island attractions",
     "eyebrow": "Explore",
     "indexTitle": "The Island, From Our Lane",
     "indexSubtitle": "Gulf at one end of the lane, bay at the other — and all of this within a stroll or an easy bike ride.",
@@ -71,18 +73,30 @@ export default {
     "emoceanBody2": "It's also the local stop for beach gear upgrades — so if the shelling bug bites hard, this is where you go for a bigger bag.",
     "emoceanHighlight1": "Sun hats & island beachwear",
     "emoceanHighlight2": "Souvenirs actually worth keeping",
-    "emoceanHighlight3": "Beach gear for forgotten essentials"
+    "emoceanHighlight3": "Beach gear for forgotten essentials",
+
+    "belDeliLabel": "Bel Deli — sandwiches, breakfast & grab-and-go around the corner",
+    "belDeliTitle": "Bel Deli",
+    "belDeliTag": "A neighborhood deli for sandwiches, breakfast, and beach-day picnics",
+    "belDeliDistance": "A short walk from our lane, here in Old Town",
+    "belDeliBody1": "Some mornings you don't want to cook, and some beach days call for a picnic packed and ready. Bel Deli is the east end's easy answer for both — fresh sandwiches, breakfast to go, cold drinks, and the little groceries you always seem to run out of.",
+    "belDeliBody2": "Grab a sandwich on the way to the sand, or pick up the makings of dinner on the walk home. It's close enough that \"I'll just run over\" is always true.",
+    "belDeliHighlight1": "Fresh made-to-order sandwiches",
+    "belDeliHighlight2": "Breakfast & coffee to go",
+    "belDeliHighlight3": "Pack a beach-day picnic in minutes"
   },
   es: {
     "backToAll": "Volver a Explora",
     "metaTitle": "Explora el Viejo Sanibel — faro, conchas y Ding Darling",
     "metaDescription": "Todo a un paseo o pedaleo de Seahorse Suites: el faro de Sanibel, playas de conchas de fama mundial, el refugio Ding Darling y los rincones favoritos del este de la isla.",
+    "metaKeywords": "qué hacer en Old Town Sanibel, faro de Sanibel, playas de conchas, refugio Ding Darling, EmOcean, restaurante Wickies, heladería Magic Bus, atracciones isla de Sanibel",
     "eyebrow": "Explora",
     "indexTitle": "La isla, desde nuestra calle",
     "indexSubtitle": "El Golfo a un extremo de la calle, la bahía al otro — y todo esto a un paseo o un corto trayecto en bici.",
     "photoAlt": "{title} — foto {n}",
     "highlightsTitle": "No te pierdas",
     "gettingThere": "Cómo llegar",
+    "visitWebsite": "Visitar sitio web",
     "ctaTitle": "Alójate a un paseo de todo esto.",
     "ctaButton": "Reservar",
 
@@ -144,6 +158,16 @@ export default {
     "emoceanBody2": "También es la parada local para mejorar tu equipo de playa — así que si el gusanillo de las conchas pica fuerte, aquí venden bolsas más grandes.",
     "emoceanHighlight1": "Sombreros y ropa de playa isleña",
     "emoceanHighlight2": "Recuerdos que de verdad querrás conservar",
-    "emoceanHighlight3": "Equipo de playa para lo que olvidaste"
+    "emoceanHighlight3": "Equipo de playa para lo que olvidaste",
+
+    "belDeliLabel": "Bel Deli — sándwiches, desayuno y para llevar a la vuelta",
+    "belDeliTitle": "Bel Deli",
+    "belDeliTag": "Un deli de barrio para sándwiches, desayuno y picnics de día de playa",
+    "belDeliDistance": "A un corto paseo de nuestra calle, aquí en Old Town",
+    "belDeliBody1": "Hay mañanas en las que no quieres cocinar, y días de playa que piden un picnic listo para llevar. Bel Deli es la respuesta fácil del extremo este para ambas cosas — sándwiches frescos, desayuno para llevar, bebidas frías y esos pequeños básicos que siempre se acaban.",
+    "belDeliBody2": "Coge un sándwich de camino a la arena, o lleva lo de la cena de vuelta a casa. Está tan cerca que \"voy y vuelvo\" siempre es verdad.",
+    "belDeliHighlight1": "Sándwiches frescos hechos al momento",
+    "belDeliHighlight2": "Desayuno y café para llevar",
+    "belDeliHighlight3": "Prepara un picnic de playa en minutos"
   }
 }
