@@ -58,7 +58,10 @@ export default defineNuxtConfig({
   },
 
   gtag: {
-    id: 'REPLACE_ME_GA_ID'
+    // GA4 Measurement ID for the Seahorse Suites web data stream.
+    // nuxt-gtag injects gtag.js and fires the initial config + SPA route
+    // pageviews automatically; no manual <script> tag is needed.
+    id: 'G-YL3W7TZR9G'
   },
 
   site: {
