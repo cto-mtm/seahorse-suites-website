@@ -5,7 +5,7 @@ Marketing site for **Seahorse Suites** (seahorsesuites.com): a Nuxt 4 static sit
 ## What's in the box
 
 - `www/` — Nuxt 4 site (Nuxt UI, Tailwind, i18n en/es, Nuxt Content news collection, SEO module, GA via nuxt-gtag).
-- `firebase/` — Hosting config + `submitForm` Cloud Function (zod validation, reCAPTCHA v3, Gmail SMTP emails via nodemailer).
+- `firebase/` — Hosting config + `submitForm` Cloud Function (zod validation, reCAPTCHA Enterprise, Gmail SMTP emails via nodemailer).
 - `docs/architecture.md` — how the pieces fit together.
 
 ## Quick start
@@ -48,6 +48,17 @@ firebase functions:secrets:set GMAIL_APP_PASSWORD
 firebase functions:secrets:set GMAIL_SENDER
 firebase functions:secrets:set RECAPTCHA_SECRET_KEY
 ```
+
+Notes on reCAPTCHA (Enterprise):
+
+- `RECAPTCHA_SECRET_KEY` holds a **Google Cloud API key** restricted to the
+  reCAPTCHA Enterprise API (`recaptchaenterprise.googleapis.com`) — not a
+  classic v3 secret. The Cloud Function uses it to create Assessments.
+- The **public site key** and GCP project ID live in the client/config:
+  `recaptchaSiteKey` in `www/nuxt.config.ts` (loaded via `enterprise.js`) and
+  `SITE_KEY` / `PROJECT_ID` in `firebase/functions/src/helpers/recaptcha.ts`.
+- Make sure the reCAPTCHA Enterprise API is enabled on the project before
+  deploying (`gcloud services enable recaptchaenterprise.googleapis.com`).
 
 ## Deploy
 

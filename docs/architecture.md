@@ -7,7 +7,7 @@ Browser ──► Firebase Hosting (static Nuxt output from firebase/www/)
    │
    └─ form POST ──► Cloud Function `submitForm` (us-central1)
                         │ zod validation (models.ts)
-                        │ reCAPTCHA v3 (score ≥ 0.5, bypassed in emulator)
+                        │ reCAPTCHA Enterprise assessment (score ≥ 0.5, bypassed in emulator)
                         ├─► notification email → business inbox
                         └─► confirmation email → visitor (if email present)
                              via Gmail SMTP + nodemailer
@@ -18,9 +18,9 @@ Browser ──► Firebase Hosting (static Nuxt output from firebase/www/)
 - **Nuxt 4 (`www/`)** builds/generates the static marketing site. The deploy flow places the generated output into `firebase/www/`, which is why `firebase.json` sets `hosting.public` to `"www"` (relative to `firebase/`).
 - **Firebase Hosting** serves the static site with long-lived cache headers for `_nuxt/`, `_fonts/`, `images/`, `videos/`.
 - **Cloud Functions** (`firebase/functions/`) expose `submitForm`, an HTTPS function handling all site forms. The static site POSTs to it from CORS-allowed origins only.
-- **Secrets** (`GMAIL_USER`, `GMAIL_APP_PASSWORD`, `GMAIL_SENDER`, `RECAPTCHA_SECRET_KEY`) live in Firebase Secret Manager via `defineSecret`.
+- **Secrets** (`GMAIL_USER`, `GMAIL_APP_PASSWORD`, `GMAIL_SENDER`, `RECAPTCHA_SECRET_KEY`) live in Firebase Secret Manager via `defineSecret`. `RECAPTCHA_SECRET_KEY` holds a Google Cloud API key (restricted to the reCAPTCHA Enterprise API) used to call the Assessment endpoint.
 - **Email** goes out via Gmail SMTP + nodemailer; templates are inline-styled HTML in `functions/src/templates/`.
-- **reCAPTCHA v3** guards submissions (min score 0.5); skipped when running in the emulator.
+- **reCAPTCHA Enterprise** guards submissions. The client (`enterprise.js` + `grecaptcha.enterprise.execute`) produces an action-scoped token; the function creates an Assessment via the reCAPTCHA Enterprise REST API and rejects submissions whose token is invalid, whose action doesn't match, or whose score is below 0.5. Skipped when running in the emulator.
 - **Content** lives in `www/content/` (Nuxt Content `news` collection).
 
 ## i18n — important
