@@ -45,10 +45,11 @@ export const submitForm = onRequest(
     }
 
     try {
-      const { formType, data, recaptchaToken } = req.body as {
+      const { formType, data, recaptchaToken, recaptchaAction } = req.body as {
         formType?: string;
         data?: Record<string, unknown>;
         recaptchaToken?: string;
+        recaptchaAction?: string;
       };
 
       const config = formType ? formConfigs[formType] : undefined;
@@ -63,6 +64,7 @@ export const submitForm = onRequest(
       const recaptcha = await verifyRecaptcha(
         recaptchaToken ?? "",
         RECAPTCHA_SECRET_KEY.value(),
+        recaptchaAction,
       );
       if (!recaptcha.success) {
         logger.warn("reCAPTCHA verification failed", { formType, error: recaptcha.error });

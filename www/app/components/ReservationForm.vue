@@ -168,7 +168,7 @@ async function onSubmit() {
     // empty rows in the notification email.
     ...(form.phone.trim() && { phone: form.phone.trim() }),
     ...(form.notes.trim() && { message: form.notes.trim() })
-  }, token)
+  }, token, 'request_booking')
 
   if (result.success) {
     state.value = 'success'

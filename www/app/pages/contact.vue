@@ -27,7 +27,7 @@ async function onSubmit() {
   serverError.value = ''
 
   const token = await recaptcha.execute('contact')
-  const result = await submitForm('contact', { ...form }, token)
+  const result = await submitForm('contact', { ...form }, token, 'contact')
 
   if (result.success) {
     state.value = 'success'

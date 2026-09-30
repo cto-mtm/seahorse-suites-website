@@ -35,10 +35,12 @@ export default defineNuxtConfig({
     public: {
       // Deployed `submitForm` Cloud Function (2nd-gen HTTPS, us-central1).
       submitFormUrl: 'https://us-central1-seahorse-suites-website.cloudfunctions.net/submitForm',
-      // reCAPTCHA v3 SITE key (public). REPLACE_ME with the real key to enable
-      // bot protection in production. Until then, forms send no token — which
-      // is fine locally (the Cloud Function bypasses reCAPTCHA in the emulator).
-      recaptchaSiteKey: 'REPLACE_ME'
+      // reCAPTCHA Enterprise SITE key (public). Used client-side by
+      // grecaptcha.enterprise.execute(). The Cloud Function verifies the token
+      // via the reCAPTCHA Enterprise Assessment API. Set to 'REPLACE_ME' to
+      // disable (forms then send no token — fine locally, where the Cloud
+      // Function bypasses reCAPTCHA in the emulator).
+      recaptchaSiteKey: '6Lc9stctAAAAAPDg-NB8ukUbsbkUqcWxoAR7qwIg'
     }
   },
 

@@ -8,5 +8,5 @@ export function createTransporter(user: string, pass: string) {
 }
 
 export function formatFrom(email: string): string {
-  return `"Seahorse Suites" <${email}>`;
+  return `"Seahorse Suites Team" <${email}>`;
 }

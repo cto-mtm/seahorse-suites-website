@@ -13,7 +13,8 @@ export function useSubmitForm() {
   async function submitForm(
     formType: string,
     data: Record<string, unknown>,
-    recaptchaToken?: string
+    recaptchaToken?: string,
+    recaptchaAction?: string
   ): Promise<SubmitFormResult> {
     const url =
       config.public.submitFormUrl && config.public.submitFormUrl !== 'REPLACE_ME'
@@ -24,7 +25,7 @@ export function useSubmitForm() {
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ formType, data, recaptchaToken })
+        body: JSON.stringify({ formType, data, recaptchaToken, recaptchaAction })
       })
 
       if (!response.ok) {
