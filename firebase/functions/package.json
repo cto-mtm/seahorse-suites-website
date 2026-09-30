@@ -1,7 +1,7 @@
 {
   "name": "seahorse-suites-functions",
   "description": "Cloud Functions for the Seahorse Suites website forms",
-  "engines": { "node": "20" },
+  "engines": { "node": "22" },
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
