@@ -11,7 +11,6 @@ import { buildConfirmationEmail } from "./templates/confirmationEmail.js";
 const GMAIL_USER = defineSecret("GMAIL_USER");
 const GMAIL_APP_PASSWORD = defineSecret("GMAIL_APP_PASSWORD");
 const GMAIL_SENDER = defineSecret("GMAIL_SENDER");
-const RECAPTCHA_SECRET_KEY = defineSecret("RECAPTCHA_SECRET_KEY");
 
 // REPLACE_ME: update with the production domain(s) before deploying
 const ALLOWED_ORIGINS = [
@@ -24,7 +23,7 @@ export const submitForm = onRequest(
   {
     region: "us-central1",
     maxInstances: 10,
-    secrets: [GMAIL_USER, GMAIL_APP_PASSWORD, GMAIL_SENDER, RECAPTCHA_SECRET_KEY],
+    secrets: [GMAIL_USER, GMAIL_APP_PASSWORD, GMAIL_SENDER],
   },
   async (req, res) => {
     const origin = req.headers.origin ?? "";
@@ -63,7 +62,6 @@ export const submitForm = onRequest(
 
       const recaptcha = await verifyRecaptcha(
         recaptchaToken ?? "",
-        RECAPTCHA_SECRET_KEY.value(),
         recaptchaAction,
       );
       if (!recaptcha.success) {

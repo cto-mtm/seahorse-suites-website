@@ -1,9 +1,11 @@
+import { RecaptchaEnterpriseServiceClient } from "@google-cloud/recaptcha-enterprise";
+
 const MIN_SCORE = 0.5;
 
-// GCP project that owns the reCAPTCHA Enterprise key. Static (not secret).
+// GCP project that owns the reCAPTCHA Enterprise key.
 const PROJECT_ID = "seahorse-suites-website";
 
-// Public reCAPTCHA Enterprise SITE key (safe to embed; also used client-side).
+// Public reCAPTCHA Enterprise SITE key (also used client-side).
 const SITE_KEY = "6Lc9stctAAAAAPDg-NB8ukUbsbkUqcWxoAR7qwIg";
 
 export interface RecaptchaResult {
@@ -12,35 +14,28 @@ export interface RecaptchaResult {
   error?: string;
 }
 
-interface AssessmentResponse {
-  tokenProperties?: {
-    valid?: boolean;
-    action?: string;
-    invalidReason?: string;
-  };
-  riskAnalysis?: {
-    score?: number;
-  };
-  error?: {
-    message?: string;
-  };
+// Reuse the client across warm invocations (recommended by Google).
+let client: RecaptchaEnterpriseServiceClient | null = null;
+function getClient(): RecaptchaEnterpriseServiceClient {
+  if (!client) {
+    client = new RecaptchaEnterpriseServiceClient();
+  }
+  return client;
 }
 
 /**
  * Verifies a reCAPTCHA Enterprise token by creating an Assessment via the
- * reCAPTCHA Enterprise REST API. Authenticated with a restricted API key
- * (passed in as `apiKey`).
+ * official client library. Authentication uses Application Default Credentials
+ * (the Cloud Function's own service account) — no API key required.
  *
  * Bypassed when running in the Functions emulator so local form testing needs
- * no keys.
+ * no credentials.
  *
- * @param token   The token produced by grecaptcha.enterprise.execute() client-side.
- * @param apiKey  Google Cloud API key restricted to recaptchaenterprise.googleapis.com.
+ * @param token           Token from grecaptcha.enterprise.execute() (client-side).
  * @param expectedAction  The action name the frontend used (e.g. "contact").
  */
 export async function verifyRecaptcha(
   token: string,
-  apiKey: string,
   expectedAction?: string,
 ): Promise<RecaptchaResult> {
   if (process.env.FUNCTIONS_EMULATOR === "true") {
@@ -52,32 +47,20 @@ export async function verifyRecaptcha(
   }
 
   try {
-    const url =
-      `https://recaptchaenterprise.googleapis.com/v1/projects/${PROJECT_ID}/assessments` +
-      `?key=${encodeURIComponent(apiKey)}`;
+    const c = getClient();
+    const projectPath = c.projectPath(PROJECT_ID);
 
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+    const [response] = await c.createAssessment({
+      parent: projectPath,
+      assessment: {
         event: {
           token,
           siteKey: SITE_KEY,
-          ...(expectedAction ? { expectedAction } : {}),
         },
-      }),
+      },
     });
 
-    const result = (await response.json()) as AssessmentResponse;
-
-    if (!response.ok) {
-      return {
-        success: false,
-        error: result.error?.message ?? `Assessment request failed (${response.status})`,
-      };
-    }
-
-    const tokenProps = result.tokenProperties;
+    const tokenProps = response.tokenProperties;
     if (!tokenProps?.valid) {
       return {
         success: false,
@@ -93,7 +76,7 @@ export async function verifyRecaptcha(
       };
     }
 
-    const score = result.riskAnalysis?.score ?? 0;
+    const score = response.riskAnalysis?.score ?? 0;
     if (score < MIN_SCORE) {
       return { success: false, score, error: "Score below threshold" };
     }

@@ -46,14 +46,16 @@ Originals live in `/logos/` (color, white, black — 2000×2000 PNG). Trimmed, w
 firebase functions:secrets:set GMAIL_USER
 firebase functions:secrets:set GMAIL_APP_PASSWORD
 firebase functions:secrets:set GMAIL_SENDER
-firebase functions:secrets:set RECAPTCHA_SECRET_KEY
 ```
 
 Notes on reCAPTCHA (Enterprise):
 
-- `RECAPTCHA_SECRET_KEY` holds a **Google Cloud API key** restricted to the
-  reCAPTCHA Enterprise API (`recaptchaenterprise.googleapis.com`) — not a
-  classic v3 secret. The Cloud Function uses it to create Assessments.
+- Verification uses the official `@google-cloud/recaptcha-enterprise` client
+  library, authenticated via the Cloud Function's own service account
+  (Application Default Credentials). **No API key or secret is required.**
+- The function's runtime service account
+  (`<PROJECT_NUMBER>-compute@developer.gserviceaccount.com`) needs the
+  `roles/recaptchaenterprise.agent` role.
 - The **public site key** and GCP project ID live in the client/config:
   `recaptchaSiteKey` in `www/nuxt.config.ts` (loaded via `enterprise.js`) and
   `SITE_KEY` / `PROJECT_ID` in `firebase/functions/src/helpers/recaptcha.ts`.
